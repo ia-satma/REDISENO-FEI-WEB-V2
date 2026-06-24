@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link href="/" className="mb-5 inline-flex items-center gap-3">
-              <img src={asset(brand.logo.main)} alt={brand.name} className="h-8 w-auto object-contain" />
+              <img src={asset(brand.logo.main)} alt={brand.name} width={113} height={32} loading="lazy" className="h-8 w-auto object-contain" />
             </Link>
             <p className="font-heading text-sm font-semibold text-navy/70">{brand.tagline}</p>
             <p className="mt-4 text-sm leading-relaxed text-slate-500">{footer.description}</p>

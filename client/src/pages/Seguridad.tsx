@@ -9,15 +9,13 @@ import { getIcon } from "@/lib/icons";
 import { fadeUp, scaleIn, staggerContainer, inViewProps } from "@/lib/motion";
 import { seguridadContent as seguridadDefault } from "@config/content/seguridad";
 import { useSiteContent } from "@/hooks/useSiteContent";
+import { seo } from "@config/seo";
 
 export default function Seguridad() {
   const s = useSiteContent("seguridad", seguridadDefault);
   return (
     <div className="site-light">
-      <SEOHead
-        title="Seguridad y Custodia — FEI Consultores"
-        description="Cómo FEI resguarda tu evidencia fiscal: cadena de custodia documental, estructura de 9 carpetas, trazabilidad, seguridad de la información y alcance claro del servicio."
-      />
+      <SEOHead title={seo.pages.seguridad.title} description={seo.pages.seguridad.description} />
 
       <PageHero eyebrow={s.hero.eyebrow} eyebrowIcon={Lock} title={s.hero.title} subtitle={s.hero.subtitle} />
 

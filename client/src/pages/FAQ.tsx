@@ -30,7 +30,7 @@ export default function FAQ() {
   return (
     <div className="site-light">
       <SEOHead title={seo.pages.faq.title} description={seo.pages.faq.description} />
-      <JsonLd data={faqSchema} />
+      <JsonLd id="faq" data={faqSchema} />
 
       <PageHero eyebrow={faq.hero.eyebrow} eyebrowIcon={HelpCircle} title={faq.hero.title} />
 

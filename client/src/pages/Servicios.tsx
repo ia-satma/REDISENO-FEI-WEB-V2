@@ -5,11 +5,12 @@ const STEP_ICONS = [CalendarCheck, Search, FileStack, PackageCheck];
 import type { LucideIcon } from "lucide-react";
 import { Link } from "wouter";
 import SEOHead from "@/components/SEOHead";
+import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/ui/PageHero";
 import { fadeUp, scaleIn, staggerContainer, inViewProps } from "@/lib/motion";
 import { serviciosContent } from "@config/content/servicios";
 import { useSiteContent } from "@/hooks/useSiteContent";
-import { seo } from "@config/seo";
+import { seo, SITE } from "@config/seo";
 
 const iconMap: Record<string, LucideIcon> = { Search, FileStack, Shield };
 const panelTints = ["bg-mint-soft", "bg-sky", "bg-lavender"];
@@ -19,6 +20,21 @@ export default function Servicios() {
   return (
     <div className="site-light">
       <SEOHead title={seo.pages.servicios.title} description={seo.pages.servicios.description} />
+      <JsonLd
+        id="services"
+        data={{
+          "@context": "https://schema.org",
+          "@graph": sv.services.map((s) => ({
+            "@type": "Service",
+            name: s.title,
+            serviceType: s.subtitle,
+            description: s.description,
+            provider: { "@id": `${SITE}/#organization` },
+            areaServed: { "@type": "Country", name: "México" },
+            url: `${SITE}/servicios#${s.id}`,
+          })),
+        }}
+      />
 
       <PageHero
         eyebrow={sv.hero.eyebrow}

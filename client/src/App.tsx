@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import FloatingDemoButton from "./components/FloatingDemoButton";
 import CookieBanner from "./components/CookieBanner";
 import EyebrowVisibility from "./components/EyebrowVisibility";
+import SiteJsonLd from "./components/SiteJsonLd";
 import { Toaster } from "./components/ui/toaster";
 import { useSmoothScroll, scrollToTop } from "./hooks/useSmoothScroll";
 import { SiteContentProvider } from "./hooks/useSiteContent";
@@ -50,6 +51,7 @@ function App() {
     <EyebrowVisibility />
     <div className={`flex min-h-screen flex-col ${!isAdmin && !isPortal ? "noise-overlay" : ""}`}>
       {!isAdmin && !isPortal && <Header />}
+      {!isAdmin && !isPortal && <SiteJsonLd />}
       <Toaster />
       <main className="flex-1">
         <Suspense fallback={<div className="flex min-h-[60vh] items-center justify-center text-sm text-slate-400">Cargando…</div>}>

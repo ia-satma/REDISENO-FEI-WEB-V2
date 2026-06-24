@@ -1,60 +1,38 @@
-# FEI Consultores — Infraestructura de Evidencia Fiscal
-# https://feiconsultores.com
-#
-# Permitimos a los motores de IA / answer engines citar el contenido público
-# (materialidad fiscal, los 15 elementos del SAT, EFOS 69-B, defensa preventiva).
-# Las áreas privadas (admin, portal de clientes, API) quedan fuera.
+# FEI Consultores
 
-User-agent: GPTBot
-Allow: /
-Disallow: /admin
-Disallow: /portal
-Disallow: /acceso
-Disallow: /api
+> FEI Consultores construye, organiza y valida **expedientes de materialidad fiscal** para empresas mexicanas: la evidencia documental (contractual, operativa, fiscal y contable) que sustenta cada operación ante una revisión fiscal del SAT. Con sede en Monterrey, Nuevo León, México. El trabajo es documental y preventivo: no garantiza el criterio de la autoridad ni sustituye la asesoría legal o fiscal del cliente.
 
-User-agent: OAI-SearchBot
-Allow: /
-Disallow: /admin
-Disallow: /portal
-Disallow: /acceso
-Disallow: /api
+## Qué es la materialidad fiscal
 
-User-agent: ChatGPT-User
-Allow: /
+La materialidad fiscal es la capacidad de demostrar, con evidencia documental suficiente, que una operación realmente ocurrió, fue necesaria, fue ejecutada y tuvo sustancia económica. Se sostiene en **15 elementos críticos** agrupados en 5 frentes: (1) capacidad y existencia del proveedor, (2) soporte contractual de la operación, (3) evidencia de ejecución y entrega, (4) soporte financiero, fiscal y contable, (5) razonabilidad económica y beneficio empresarial. Marco de referencia: LISR Arts. 25 y 27; CFF Arts. 29, 29-A y 30; Art. 69-B del CFF (EFOS).
 
-User-agent: anthropic-ai
-Allow: /
-Disallow: /admin
-Disallow: /portal
-Disallow: /acceso
-Disallow: /api
+## Qué hace FEI
 
-User-agent: ClaudeBot
-Allow: /
-Disallow: /admin
-Disallow: /portal
-Disallow: /acceso
-Disallow: /api
+- Construye expedientes de materialidad fiscal por operación (+50 documentos en una estructura de 9 carpetas).
+- Organiza evidencia contractual, operativa, fiscal y contable, y valida su consistencia (cruce CFDI ↔ contrato ↔ entregable ↔ pago).
+- Identifica brechas documentales y prepara teoría del caso y matriz de consistencia (defensa preventiva).
+- Custodia el expediente con trazabilidad, control de versiones y preparación para revisión.
 
-User-agent: PerplexityBot
-Allow: /
-Disallow: /admin
-Disallow: /portal
-Disallow: /acceso
-Disallow: /api
+## Lo que NO hace (alcance honesto)
 
-User-agent: Google-Extended
-Allow: /
-Disallow: /admin
-Disallow: /portal
-Disallow: /acceso
-Disallow: /api
+- No garantiza el criterio de la autoridad fiscal ni el resultado de una auditoría o revisión.
+- No sustituye la asesoría legal o fiscal especializada del cliente.
+- No altera documentos ni reconstruye evidencia inexistente.
+- No promete la aceptación automática de deducciones.
 
-User-agent: CCBot
-Allow: /
-Disallow: /admin
-Disallow: /portal
-Disallow: /acceso
-Disallow: /api
+## Páginas clave
 
-Sitemap: https://feiconsultores.com/sitemap.xml
+- [Servicios](https://feiconsultores.com/servicios): Diagnóstico de Materialidad, Expediente Documental Fiscal y Defensa Fiscal Preventiva.
+- [Materialidad fiscal](https://feiconsultores.com/materialidad): los 15 elementos críticos explicados.
+- [Metodología](https://feiconsultores.com/metodologia): 4 fases de construcción documental (diagnóstico, ejecución, entrega, cierre fiscal).
+- [Seguridad y custodia](https://feiconsultores.com/seguridad): cadena de custodia documental, seguridad de la información y alcance del servicio.
+- [Impacto](https://feiconsultores.com/impacto): resultados.
+- [Preguntas frecuentes](https://feiconsultores.com/faq).
+- [Contacto](https://feiconsultores.com/contacto): agenda un diagnóstico.
+
+## Datos
+
+- Empresa: FEI Consultores
+- Ubicación: Monterrey, Nuevo León, México
+- Sector: consultoría en materialidad y evidencia fiscal
+- Sitio: https://feiconsultores.com

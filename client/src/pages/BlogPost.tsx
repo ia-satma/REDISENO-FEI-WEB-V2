@@ -5,6 +5,8 @@ import { useQuery } from "@tanstack/react-query";
 import SEOHead from "@/components/SEOHead";
 import JsonLd from "@/components/JsonLd";
 import { EASE_OUT } from "@/lib/motion";
+import { SITE } from "@config/seo";
+import { brand } from "@config/brand";
 import type { BlogPost as BlogPostType } from "@shared/schema";
 
 export default function BlogPost() {
@@ -32,31 +34,39 @@ export default function BlogPost() {
     );
   }
 
-  const SITE = "https://feiconsultores.com";
   const articleImg = post.coverImage
     ? (post.coverImage.startsWith("http") ? post.coverImage : SITE + post.coverImage)
     : `${SITE}/og-image.jpg`;
+  const publishedIso = post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.seoDescription || post.excerpt || undefined,
     image: articleImg,
-    datePublished: post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined,
-    dateModified: post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined,
+    datePublished: publishedIso,
+    dateModified: publishedIso,
     mainEntityOfPage: `${SITE}/blog/${params.slug}`,
-    author: { "@type": "Organization", name: "FEI Consultores", url: SITE },
+    inLanguage: "es-MX",
+    author: { "@type": "Organization", name: brand.name, url: `${SITE}/` },
     publisher: {
       "@type": "Organization",
-      name: "FEI Consultores",
-      logo: { "@type": "ImageObject", url: `${SITE}/logo.png` },
+      name: brand.name,
+      logo: { "@type": "ImageObject", url: `${SITE}${brand.logo.main}` },
     },
   };
 
   return (
     <div className="site-light">
-      <SEOHead title={post.seoTitle || post.title} description={post.seoDescription || post.excerpt || undefined} />
-      <JsonLd data={articleSchema} />
+      <SEOHead
+        title={post.seoTitle || post.title}
+        description={post.seoDescription || post.excerpt || undefined}
+        image={post.coverImage || undefined}
+        type="article"
+        publishedTime={publishedIso}
+        modifiedTime={publishedIso}
+      />
+      <JsonLd id="article" data={articleSchema} />
 
       <section className="field-soft relative overflow-hidden bg-[#f7f9fc]">
         <div className="bg-grid-fine absolute inset-0 opacity-[0.4]" />

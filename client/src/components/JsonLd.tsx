@@ -1,16 +1,27 @@
 import { useEffect } from "react";
 
-/** Injects a JSON-LD <script> into <head> and removes it on unmount/route change. */
-export default function JsonLd({ data }: { data: Record<string, unknown> }) {
+/**
+ * Injects a JSON-LD <script> into <head>. Pass a stable `id` so re-renders
+ * (e.g. route changes) update the SAME script in place instead of appending a
+ * duplicate — keeps the pre-rendered HTML clean (one script per schema block).
+ * The script is removed on unmount.
+ */
+export default function JsonLd({ data, id }: { data: Record<string, unknown>; id?: string }) {
   const json = JSON.stringify(data);
   useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
+    const key = id || "jsonld";
+    let script = document.head.querySelector<HTMLScriptElement>(`script[data-jsonld="${key}"]`);
+    if (!script) {
+      script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.setAttribute("data-jsonld", key);
+      document.head.appendChild(script);
+    }
     script.textContent = json;
-    document.head.appendChild(script);
     return () => {
-      if (script.parentNode) script.parentNode.removeChild(script);
+      const el = document.head.querySelector(`script[data-jsonld="${key}"]`);
+      if (el && el.parentNode) el.parentNode.removeChild(el);
     };
-  }, [json]);
+  }, [json, id]);
   return null;
 }

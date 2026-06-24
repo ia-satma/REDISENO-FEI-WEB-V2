@@ -46,7 +46,7 @@ export default function Header() {
           }}
           className="group flex items-center gap-3"
         >
-          <img src={asset(brand.logo.main)} alt={brand.name} className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]" />
+          <img src={asset(brand.logo.main)} alt={brand.name} width={127} height={36} fetchPriority="high" className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]" />
         </Link>
 
         {/* Desktop nav with dropdowns (full row only ≥xl; below that → hamburger) */}

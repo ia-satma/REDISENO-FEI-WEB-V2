@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FEI Consultores — Infraestructura de Evidencia Fiscal</title>
-    <meta name="description" content="Construimos la infraestructura documental que protege tus operaciones fiscales. Expedientes de materialidad con +50 documentos de soporte por operación." />
+    <!-- Baseline meta (homepage / SPA fallback). Per-route values are injected by
+         SEOHead and baked in at pre-render. Domain is centralized in config/brand.ts
+         (→ SITE) — these absolute URLs are placeholders the pre-render overwrites. -->
+    <title>Expedientes de Materialidad Fiscal listos para auditoría | FEI Consultores</title>
+    <meta name="description" content="Construimos, organizamos y validamos los expedientes de materialidad fiscal que sustentan tus operaciones ante revisiones fiscales. +50 documentos estructurados por operación." />
     <link rel="canonical" href="https://feiconsultores.com/" />
 
     <!-- Crawl + local (GEO) signals -->
@@ -18,8 +21,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_MX" />
     <meta property="og:site_name" content="FEI Consultores" />
-    <meta property="og:title" content="FEI Consultores — Infraestructura de Evidencia Fiscal" />
-    <meta property="og:description" content="Construimos la infraestructura documental que protege tus operaciones fiscales. Expedientes con +50 documentos por operación." />
+    <meta property="og:title" content="Expedientes de Materialidad Fiscal listos para auditoría | FEI Consultores" />
+    <meta property="og:description" content="Construimos, organizamos y validamos expedientes de materialidad fiscal que sustentan tus operaciones ante revisiones fiscales. +50 documentos estructurados por operación." />
     <meta property="og:url" content="https://feiconsultores.com/" />
     <meta property="og:image" content="https://feiconsultores.com/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -27,48 +30,13 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="FEI Consultores — Infraestructura de Evidencia Fiscal" />
-    <meta name="twitter:description" content="Expedientes de materialidad fiscal con +50 documentos de soporte por operación." />
+    <meta name="twitter:title" content="Expedientes de Materialidad Fiscal listos para auditoría | FEI Consultores" />
+    <meta name="twitter:description" content="Expedientes de materialidad fiscal: +50 documentos estructurados por operación, preparados para revisión." />
     <meta name="twitter:image" content="https://feiconsultores.com/og-image.jpg" />
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "FEI Consultores",
-      "description": "Infraestructura de Evidencia Fiscal: expedientes de materialidad que blindan las deducciones de empresas mexicanas ante el SAT.",
-      "url": "https://feiconsultores.com",
-      "logo": "https://feiconsultores.com/logo.png",
-      "image": "https://feiconsultores.com/og-image.jpg",
-      "telephone": "(+52) 55 2303-2000",
-      "email": "contacto@feiconsultoria.mx",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Monterrey",
-        "addressRegion": "Nuevo León",
-        "addressCountry": "MX"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 25.6866,
-        "longitude": -100.3161
-      },
-      "areaServed": [
-        { "@type": "AdministrativeArea", "name": "Nuevo León" },
-        { "@type": "Country", "name": "México" }
-      ],
-      "serviceType": [
-        "Materialidad Fiscal",
-        "Evidencia Documental",
-        "Defensa Fiscal Preventiva",
-        "Consultoría Fiscal"
-      ],
-      "sameAs": [
-        "https://linkedin.com/company/fei-consultores"
-      ]
-    }
-    </script>
+    <!-- Structured data (Organization/LocalBusiness + WebSite) is injected by
+         <SiteJsonLd> from config/brand + config/seo so it stays domain-centralized
+         and free of absolute-claim copy; baked in at pre-render. -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

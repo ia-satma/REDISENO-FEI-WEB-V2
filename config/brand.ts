@@ -1,6 +1,9 @@
 export const brand = {
   name: "FEI Consultores",
-  tagline: "Infraestructura de Evidencia Fiscal",
+  tagline: "Expedientes de Materialidad Fiscal",
+  // Production origin — change ONCE here; SITE in config/seo.ts derives from it
+  // and every canonical/OG/sitemap/JSON-LD surface follows. (Pending: confirm
+  // final domain; email uses @feiconsultoria.mx — align NAP before launch.)
   domain: "feiconsultores.com",
   contact: {
     email: "contacto@feiconsultoria.mx",

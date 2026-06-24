@@ -1,11 +1,24 @@
 import { brand } from "./brand";
 
+/** Single source of truth for the production origin (centralized in brand.domain).
+ *  Change the domain ONCE in config/brand.ts and every canonical/OG/sitemap/JSON-LD
+ *  surface follows. */
+export const SITE = `https://${brand.domain}`;
+
+/** Local SEO / GEO signals (Monterrey, Nuevo León). */
+export const GEO = {
+  region: "MX-NLE",
+  placename: "Monterrey",
+  lat: 25.6866,
+  lng: -100.3161,
+} as const;
+
 export const seo = {
   defaults: {
     titleTemplate: `%s | ${brand.name}`,
-    defaultTitle: `${brand.name} \u2014 ${brand.tagline}`,
+    defaultTitle: `${brand.name} — ${brand.tagline}`,
     description:
-      "Construimos, organizamos y validamos los expedientes de materialidad fiscal que sustentan tus operaciones ante revisiones fiscales. +50 documentos estructurados por operaci\u00f3n.",
+      "Construimos, organizamos y validamos los expedientes de materialidad fiscal que sustentan tus operaciones ante revisiones fiscales. +50 documentos estructurados por operación.",
     ogImage: "/og-image.jpg",
     locale: "es_MX",
     type: "website" as const,
@@ -13,74 +26,54 @@ export const seo = {
   },
   pages: {
     home: {
-      title: `${brand.name} \u2014 ${brand.tagline}`,
+      title: "Expedientes de Materialidad Fiscal listos para auditoría | FEI Consultores",
       description:
-        "Construimos, organizamos y validamos expedientes de materialidad fiscal que sustentan tus operaciones. +50 documentos estructurados por operaci\u00f3n.",
+        "Construimos, organizamos y validamos expedientes de materialidad fiscal que sustentan tus operaciones ante revisiones fiscales. +50 documentos estructurados por operación.",
     },
     servicios: {
       title: "Servicios de Materialidad Fiscal",
       description:
-        "Diagn\u00f3stico de materialidad, expediente documental fiscal y defensa preventiva para empresas mexicanas.",
+        "Diagnóstico de materialidad, expediente documental fiscal y defensa preventiva para empresas mexicanas.",
     },
     metodologia: {
-      title: "Metodolog\u00eda FEI",
+      title: "Metodología FEI",
       description:
-        "4 fases de construcci\u00f3n documental: diagn\u00f3stico, ejecuci\u00f3n, entrega y cierre fiscal. Un expediente trazable y preparado para revisi\u00f3n.",
+        "4 fases de construcción documental: diagnóstico, ejecución, entrega y cierre fiscal. Un expediente trazable y preparado para revisión.",
     },
     materialidad: {
-      title: "Los 15 elementos cr\u00edticos de materialidad fiscal",
+      title: "Los 15 elementos críticos de materialidad fiscal",
       description:
-        "La materialidad fiscal consiste en demostrar, con evidencia documental suficiente, que una operaci\u00f3n realmente ocurri\u00f3. Se sostiene en 15 elementos cr\u00edticos.",
+        "La materialidad fiscal consiste en demostrar, con evidencia documental suficiente, que una operación realmente ocurrió. Se sostiene en 15 elementos críticos.",
     },
     impacto: {
       title: "Impacto y Resultados",
       description:
-        "M\u00e1s de $1,200 millones en operaciones con expediente fiscal estructurado. 35x de valor documental soportado frente a la inversi\u00f3n.",
+        "Más de $1,200 millones en operaciones con expediente fiscal estructurado. 35x de valor documental soportado frente a la inversión.",
+    },
+    seguridad: {
+      title: "Seguridad y Custodia del Expediente Fiscal",
+      description:
+        "Cadena de custodia documental, estructura de 9 carpetas, trazabilidad, seguridad de la información y alcance claro del servicio.",
     },
     blog: {
-      title: "Blog \u2014 Inteligencia Fiscal",
+      title: "Blog — Inteligencia Fiscal",
       description:
-        "Art\u00edculos sobre materialidad fiscal, preparaci\u00f3n ante revisiones y mejores pr\u00e1cticas de evidencia documental.",
+        "Artículos sobre materialidad fiscal, preparación ante revisiones y mejores prácticas de evidencia documental.",
     },
     contacto: {
-      title: "Agenda un diagn\u00f3stico",
+      title: "Agenda un diagnóstico",
       description:
-        "Evaluamos tu situaci\u00f3n documental sin compromiso. Agenda una llamada con nuestros especialistas.",
+        "Evaluamos tu situación documental sin compromiso. Agenda una llamada con nuestros especialistas.",
     },
     faq: {
-      title: "Preguntas Frecuentes",
+      title: "Preguntas Frecuentes sobre Materialidad Fiscal",
       description:
-        "\u00bfQu\u00e9 incluye un expediente de materialidad? \u00bfCu\u00e1nto toma? Resolvemos tus dudas sobre el proceso FEI.",
+        "¿Qué incluye un expediente de materialidad? ¿Cuánto toma? Resolvemos tus dudas sobre el proceso FEI.",
     },
     legal: {
       title: "Aviso de Privacidad",
       description: "Aviso de privacidad de FEI Consultores conforme a la LFPDPPP.",
     },
-  },
-  jsonLd: {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    name: brand.name,
-    description: "Infraestructura de Evidencia Fiscal para empresas mexicanas",
-    url: `https://${brand.domain}`,
-    telephone: brand.contact.phone,
-    email: brand.contact.email,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Monterrey",
-      addressRegion: "Nuevo Le\u00f3n",
-      addressCountry: "MX",
-    },
-    areaServed: {
-      "@type": "Country",
-      name: "M\u00e9xico",
-    },
-    serviceType: [
-      "Materialidad Fiscal",
-      "Evidencia Documental",
-      "Defensa Fiscal Preventiva",
-      "Consultor\u00eda Fiscal",
-    ],
   },
 } as const;
 
