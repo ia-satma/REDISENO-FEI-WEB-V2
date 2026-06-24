@@ -6,10 +6,10 @@ import { scaleIn, staggerContainer, fadeUp, inViewProps } from "@/lib/motion";
 
 // Curated proof numbers (from FEI content) — Payana-style big mint stats on navy.
 const STATS = [
-  { value: "$1,200", suffix: "MDP", label: "en operaciones protegidas", icon: ShieldCheck },
-  { value: "180", suffix: "", label: "operaciones blindadas en un ejercicio", icon: FileStack },
-  { value: "15/15", suffix: "", label: "elementos de materialidad del SAT", icon: Layers },
-  { value: "35", suffix: "x", label: "ROI promedio sobre la inversión", icon: TrendingUp },
+  { value: "MXN $1,200", suffix: "M", label: "en operaciones con expediente fiscal estructurado", icon: ShieldCheck },
+  { value: "180", suffix: "", label: "operaciones documentadas durante un ejercicio fiscal", icon: FileStack },
+  { value: "15/15", suffix: "", label: "elementos críticos de materialidad fiscal cubiertos", icon: Layers },
+  { value: "35", suffix: "x", label: "valor documental soportado frente a la inversión", icon: TrendingUp },
 ];
 
 export default function ImpactoBand() {

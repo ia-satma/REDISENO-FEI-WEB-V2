@@ -5,7 +5,7 @@ export const seo = {
     titleTemplate: `%s | ${brand.name}`,
     defaultTitle: `${brand.name} \u2014 ${brand.tagline}`,
     description:
-      "Construimos la infraestructura documental que protege tus operaciones fiscales. Expedientes de materialidad con +50 documentos de soporte por operaci\u00f3n.",
+      "Construimos, organizamos y validamos los expedientes de materialidad fiscal que sustentan tus operaciones ante revisiones fiscales. +50 documentos estructurados por operaci\u00f3n.",
     ogImage: "/og-image.jpg",
     locale: "es_MX",
     type: "website" as const,
@@ -15,37 +15,37 @@ export const seo = {
     home: {
       title: `${brand.name} \u2014 ${brand.tagline}`,
       description:
-        "Construimos la infraestructura documental que protege tus operaciones fiscales. Expedientes con +50 documentos por operaci\u00f3n.",
+        "Construimos, organizamos y validamos expedientes de materialidad fiscal que sustentan tus operaciones. +50 documentos estructurados por operaci\u00f3n.",
     },
     servicios: {
       title: "Servicios de Materialidad Fiscal",
       description:
-        "Diagn\u00f3stico fiscal, construcci\u00f3n de evidencia documental y defensa preventiva para empresas mexicanas.",
+        "Diagn\u00f3stico de materialidad, expediente documental fiscal y defensa preventiva para empresas mexicanas.",
     },
     metodologia: {
       title: "Metodolog\u00eda FEI",
       description:
-        "4 fases sistem\u00e1ticas: contrataci\u00f3n, ejecuci\u00f3n, entrega y cierre. Cada expediente es un traje a la medida.",
+        "4 fases de construcci\u00f3n documental: diagn\u00f3stico, ejecuci\u00f3n, entrega y cierre fiscal. Un expediente trazable y preparado para revisi\u00f3n.",
     },
     materialidad: {
-      title: "\u00bfQu\u00e9 es la Materialidad Fiscal?",
+      title: "Los 15 elementos cr\u00edticos de materialidad fiscal",
       description:
-        "La materialidad fiscal es la capacidad de demostrar que una operaci\u00f3n realmente ocurri\u00f3. El SAT exige 15 elementos de prueba.",
+        "La materialidad fiscal consiste en demostrar, con evidencia documental suficiente, que una operaci\u00f3n realmente ocurri\u00f3. Se sostiene en 15 elementos cr\u00edticos.",
     },
     impacto: {
       title: "Impacto y Resultados",
       description:
-        "M\u00e1s de $1,200 MDP en operaciones protegidas. ROI promedio de 35x sobre la inversi\u00f3n en materialidad.",
+        "M\u00e1s de $1,200 millones en operaciones con expediente fiscal estructurado. 35x de valor documental soportado frente a la inversi\u00f3n.",
     },
     blog: {
       title: "Blog \u2014 Inteligencia Fiscal",
       description:
-        "Art\u00edculos sobre materialidad fiscal, defensa ante el SAT, y mejores pr\u00e1cticas de evidencia documental.",
+        "Art\u00edculos sobre materialidad fiscal, preparaci\u00f3n ante revisiones y mejores pr\u00e1cticas de evidencia documental.",
     },
     contacto: {
-      title: "Agenda tu Demo",
+      title: "Agenda un diagn\u00f3stico",
       description:
-        "Evaluamos tu situaci\u00f3n fiscal sin compromiso. Agenda una llamada con nuestros especialistas.",
+        "Evaluamos tu situaci\u00f3n documental sin compromiso. Agenda una llamada con nuestros especialistas.",
     },
     faq: {
       title: "Preguntas Frecuentes",

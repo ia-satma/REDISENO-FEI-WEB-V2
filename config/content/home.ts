@@ -2,22 +2,22 @@ import { serviciosContent } from "./servicios";
 
 export const homeContent = {
   hero: {
-    badge: "Protecci\u00f3n Fiscal Inteligente",
-    title: "Infraestructura de Evidencia Fiscal",
+    badge: "Materialidad Fiscal Documentada",
+    title: "Expedientes de Materialidad Fiscal listos para auditor\u00eda",
     titleParts: {
-      prefix: "Infraestructura de",
-      rotating: ["Evidencia", "Materialidad", "Defensa", "Blindaje"],
-      suffix: "Fiscal",
+      prefix: "Expedientes de Materialidad Fiscal",
+      rotating: ["trazables", "consistentes", "defendibles", "preparados"],
+      suffix: "para auditor\u00eda",
     },
     subtitle:
-      "Construimos el expediente documental que protege tus operaciones. Cada deducci\u00f3n respaldada, cada operaci\u00f3n demostrable, cada auditor\u00eda superada.",
+      "Construimos, organizamos y validamos la evidencia documental que respalda tus operaciones ante revisiones fiscales. Cada operaci\u00f3n queda estructurada en expedientes trazables, consistentes y defendibles.",
     stats: [
-      { value: "15/15", label: "Elementos de materialidad cubiertos" },
-      { value: "4", label: "Fases sistem\u00e1ticas de implementaci\u00f3n" },
-      { value: "+50", label: "Documentos por operaci\u00f3n" },
+      { value: "15/15", label: "Elementos cr\u00edticos de materialidad fiscal" },
+      { value: "4", label: "Fases de construcci\u00f3n documental" },
+      { value: "+50", label: "Documentos estructurados por operaci\u00f3n" },
     ],
-    cta: { label: "Agenda tu Demo", href: "/contacto" },
-    ctaSecondary: { label: "Conoce la Metodolog\u00eda", href: "/metodologia" },
+    cta: { label: "Agenda un diagn\u00f3stico", href: "/contacto" },
+    ctaSecondary: { label: "Conoce la metodolog\u00eda", href: "/metodologia" },
   },
 
   contexto: {
@@ -25,25 +25,25 @@ export const homeContent = {
     eyebrow: "El Contexto",
     title: "La brecha entre operar y poder probarlo",
     description:
-      "Tu empresa opera correctamente. Facturas, pagas impuestos, cumples contratos. Pero cuando el SAT pregunta \u00ab\u00bfc\u00f3mo demuestras que esta operaci\u00f3n realmente ocurri\u00f3?\u00bb, la mayor\u00eda de las empresas no tiene respuesta.",
+      "Tu empresa puede operar correctamente, emitir facturas, pagar impuestos y cumplir contratos. El problema surge cuando una autoridad pregunta: \u00bfc\u00f3mo demuestras que esta operaci\u00f3n realmente ocurri\u00f3, fue necesaria y gener\u00f3 un beneficio empresarial?",
     cards: [
       {
         icon: "FileWarning",
         title: "\u00bfTienes contrato firmado?",
         description:
-          "No basta con facturar. El SAT exige evidencia documental completa de que el servicio fue real, necesario y efectivamente prestado.",
+          "No basta con facturar. En una revisi\u00f3n fiscal, la empresa debe poder sustentar con evidencia documental que el servicio fue real, necesario, ejecutado y razonable.",
       },
       {
         icon: "Scale",
         title: "\u00bfPuedes demostrar la ejecuci\u00f3n?",
         description:
-          "Minutas de trabajo, reportes de avance, entregables t\u00e9cnicos, correspondencia. Sin esto, tu deducci\u00f3n es vulnerable.",
+          "Minutas de trabajo, reportes de avance, entregables t\u00e9cnicos, correspondencia. Sin esto, el soporte de tu deducci\u00f3n queda incompleto.",
       },
       {
         icon: "ShieldAlert",
-        title: "\u00bfTu expediente resiste una auditor\u00eda?",
+        title: "\u00bfTu expediente est\u00e1 preparado para revisi\u00f3n?",
         description:
-          "El promedio de las empresas mexicanas cumple solo 6 de 15 elementos de materialidad. Eso es un expediente indefendible.",
+          "En diagn\u00f3sticos documentales es com\u00fan encontrar operaciones con evidencia parcial, dispersa o incompleta. Eso es un expediente con brechas documentales.",
       },
       {
         icon: "TrendingDown",
@@ -89,30 +89,30 @@ export const homeContent = {
   solucion: {
     sectionId: "solucion",
     eyebrow: "La Soluci\u00f3n",
-    title: "FEI: Infraestructura de Evidencia Fiscal",
+    title: "La arquitectura de tu expediente fiscal",
     subtitle:
-      "No somos un despacho contable. Somos la infraestructura que construye, organiza y blinda tu evidencia documental.",
+      "No somos un despacho contable tradicional. Somos una metodolog\u00eda documental que construye, organiza y valida la evidencia necesaria para sustentar operaciones empresariales ante revisiones fiscales.",
     columns: [
       {
         icon: "BrainCircuit",
-        title: "Especialistas en Materialidad",
+        title: "Especialistas en evidencia fiscal",
         description:
-          "Equipo dedicado exclusivamente a construir expedientes de materialidad fiscal. No contabilidad general \u2014 evidencia documental pura.",
+          "Equipo dedicado a construir expedientes de materialidad fiscal con enfoque documental, operativo, contable y fiscal.",
       },
       {
         icon: "Cpu",
-        title: "Automatizaci\u00f3n Inteligente",
+        title: "Automatizaci\u00f3n inteligente",
         description:
-          "Tecnolog\u00eda propietaria que genera, valida y organiza m\u00e1s de 50 documentos por operaci\u00f3n con consistencia perfecta.",
+          "Tecnolog\u00eda que apoya la generaci\u00f3n, clasificaci\u00f3n, validaci\u00f3n y organizaci\u00f3n de evidencia documental por operaci\u00f3n, reduciendo errores, omisiones e inconsistencias.",
       },
       {
         icon: "FolderCheck",
-        title: "Expedientes Blindados",
+        title: "Expedientes estructurados",
         description:
-          "Cada expediente cubre los 15 elementos de materialidad que el SAT eval\u00faa. Estructura de 9 carpetas lista para auditor\u00eda.",
+          "Cada expediente se organiza alrededor de elementos cr\u00edticos de materialidad fiscal, integrando documentos contractuales, operativos, fiscales, contables y de razonabilidad econ\u00f3mica.",
       },
     ],
-    banner: "Construimos la evidencia que tus operaciones necesitan para ser indefendibles.",
+    banner: "Construimos la evidencia que tus operaciones necesitan para sustentar su materialidad.",
   },
 
   metodologia: {
@@ -120,35 +120,35 @@ export const homeContent = {
     eyebrow: "La Metodolog\u00eda",
     title: "4 fases sistem\u00e1ticas",
     subtitle:
-      "Cada expediente es un traje a la medida. No aplicamos recetas \u2014 entendemos tu operaci\u00f3n y construimos la evidencia que la respalda.",
+      "No aplicamos formatos gen\u00e9ricos. Analizamos la naturaleza de cada operaci\u00f3n, identificamos la evidencia requerida y construimos un expediente documental consistente, trazable y preparado para revisi\u00f3n.",
     phases: [
       {
         number: "01",
-        title: "Contrataci\u00f3n",
+        title: "Diagn\u00f3stico y alcance",
         description:
-          "Diagn\u00f3stico fiscal, contrato de servicios, NDA, orden de trabajo. Base legal s\u00f3lida para toda la operaci\u00f3n.",
-        items: ["Diagn\u00f3stico de materialidad", "Contrato mercantil", "Acuerdo de confidencialidad", "Alcance de trabajo"],
+          "Evaluamos la operaci\u00f3n, definimos el alcance documental y establecemos la base contractual necesaria para construir el expediente de materialidad.",
+        items: ["Diagn\u00f3stico de materialidad", "Contrato mercantil o de servicios", "Acuerdo de confidencialidad", "Orden o alcance de trabajo"],
       },
       {
         number: "02",
-        title: "Ejecuci\u00f3n",
+        title: "Ejecuci\u00f3n y documentaci\u00f3n",
         description:
-          "Minutas de trabajo, reportes de avance, correspondencia profesional. Evidencia viva de que el servicio se prest\u00f3.",
-        items: ["Minutas mensuales", "Reportes de avance", "Correspondencia formal", "Control de calidad"],
+          "Durante la prestaci\u00f3n del servicio, recopilamos y estructuramos evidencia viva de ejecuci\u00f3n: minutas, reportes, correspondencia formal y controles de avance.",
+        items: ["Minutas de trabajo", "Reportes de avance", "Correspondencia formal", "Control de calidad documental"],
       },
       {
         number: "03",
-        title: "Entrega",
+        title: "Entrega y validaci\u00f3n",
         description:
-          "Entregables t\u00e9cnicos completos, acta de entrega-recepci\u00f3n, carta de satisfacci\u00f3n. Cierre documental impecable.",
-        items: ["Entregables t\u00e9cnicos (7+)", "Acta entrega-recepci\u00f3n", "Carta de satisfacci\u00f3n", "Gu\u00eda operativa"],
+          "Integramos los entregables t\u00e9cnicos, actas de entrega-recepci\u00f3n y evidencia de aceptaci\u00f3n para demostrar que el servicio fue efectivamente recibido.",
+        items: ["Entregables t\u00e9cnicos", "Acta de entrega-recepci\u00f3n", "Carta de satisfacci\u00f3n o aceptaci\u00f3n", "Gu\u00eda operativa o evidencia final"],
       },
       {
         number: "04",
-        title: "Cierre",
+        title: "Cierre fiscal y expediente final",
         description:
-          "P\u00f3lizas contables, conciliaci\u00f3n fiscal, teor\u00eda del caso. Tu expediente queda blindado y listo para cualquier revisi\u00f3n.",
-        items: ["P\u00f3lizas contables", "Conciliaci\u00f3n fiscal", "Teor\u00eda del caso", "Matriz de consistencia"],
+          "Integramos el soporte contable, fiscal y documental para generar un expediente consistente, trazable y preparado para una eventual revisi\u00f3n.",
+        items: ["P\u00f3lizas contables", "Conciliaci\u00f3n fiscal", "Teor\u00eda del caso", "Matriz de consistencia documental"],
       },
     ],
     banner: "Cada fase genera evidencia real \u2014 no documentos de relleno.",
@@ -159,11 +159,11 @@ export const homeContent = {
     eyebrow: "El Impacto",
     title: "Resultados que hablan",
     metrics: [
-      { value: "$1,200", suffix: "MDP", label: "En operaciones protegidas" },
-      { value: "$80", suffix: "MDP", label: "En deducciones blindadas" },
-      { value: "35", suffix: "x", label: "ROI promedio sobre inversi\u00f3n" },
+      { value: "$1,200", suffix: "M", label: "En operaciones con expediente fiscal estructurado" },
+      { value: "180", suffix: "", label: "Operaciones documentadas durante un ejercicio fiscal" },
+      { value: "35", suffix: "x", label: "Valor documental soportado frente a la inversi\u00f3n" },
     ],
-    banner: "Cada peso invertido en materialidad protege 35 pesos en deducciones.",
+    banner: "Por cada peso invertido en documentaci\u00f3n fiscal, se estructuran hasta 35 pesos en deducciones soportadas documentalmente.",
   },
 
   comparativa: {
@@ -174,57 +174,58 @@ export const homeContent = {
       label: "Sin FEI",
       variant: "danger" as const,
       items: [
-        "6/15 elementos de materialidad",
-        "Expediente incompleto y vulnerable",
-        "Deducciones en riesgo de rechazo",
-        "Sin defensa ante auditor\u00eda",
-        "Responsabilidad solidaria directivos",
-        "Reacci\u00f3n tard\u00eda ante requerimientos",
+        "Evidencia documental parcial o dispersa",
+        "Operaciones con soporte incompleto",
+        "Mayor exposici\u00f3n ante revisiones fiscales",
+        "Respuesta reactiva ante requerimientos",
+        "Falta de matriz documental por operaci\u00f3n",
+        "Dificultad para demostrar ejecuci\u00f3n y beneficio",
       ],
     },
     with: {
       label: "Con FEI",
       variant: "success" as const,
       items: [
-        "15/15 elementos de materialidad",
-        "Expediente blindado con +50 documentos",
-        "Deducciones respaldadas al 100%",
-        "Defensa preventiva documentada",
-        "Protecci\u00f3n directiva completa",
-        "Preparaci\u00f3n proactiva permanente",
+        "Expediente estructurado bajo 15 elementos cr\u00edticos",
+        "+50 documentos organizados por operaci\u00f3n",
+        "Evidencia contractual, operativa, fiscal y contable integrada",
+        "Teor\u00eda del caso y matriz de consistencia documental",
+        "Preparaci\u00f3n preventiva ante revisiones",
+        "Mayor trazabilidad para sustentar la materialidad",
       ],
     },
-    banner: "La diferencia entre sobrevivir una auditor\u00eda y perderla.",
+    banner: "La diferencia entre responder con documentos dispersos y presentar un expediente estructurado.",
   },
 
   implementacion: {
     sectionId: "implementacion",
     eyebrow: "La Implementaci\u00f3n",
-    title: "Activo en 3 semanas",
-    subtitle: "Del diagn\u00f3stico al expediente completo en un tiempo que no interrumpe tu operaci\u00f3n.",
+    title: "Implementaci\u00f3n desde 3 semanas",
+    subtitle: "Un proceso estructurado para pasar del diagn\u00f3stico inicial a un expediente documental funcional, sin interrumpir la operaci\u00f3n del negocio.",
+    note: "El plazo puede variar seg\u00fan el volumen, complejidad y disponibilidad de la informaci\u00f3n.",
     timeline: [
-      { week: "Semana 1", title: "Diagn\u00f3stico", description: "Evaluaci\u00f3n fiscal, an\u00e1lisis de operaciones, dise\u00f1o del expediente." },
-      { week: "Semana 2", title: "Construcci\u00f3n", description: "Generaci\u00f3n documental, validaci\u00f3n cruzada, control de calidad." },
-      { week: "Semana 3", title: "Entrega", description: "Expediente completo, capacitaci\u00f3n del equipo, transferencia de conocimiento." },
-      { week: "Continuo", title: "Mantenimiento", description: "Actualizaci\u00f3n peri\u00f3dica, soporte ante requerimientos, mejora continua." },
+      { week: "Semana 1", title: "Diagn\u00f3stico", description: "Evaluamos las operaciones relevantes, identificamos brechas documentales y definimos la arquitectura del expediente." },
+      { week: "Semana 2", title: "Construcci\u00f3n", description: "Recopilamos, generamos y organizamos evidencia documental, validando consistencia entre contrato, ejecuci\u00f3n, CFDI, pagos y soporte contable." },
+      { week: "Semana 3", title: "Entrega", description: "Entregamos el expediente estructurado, capacitamos al equipo responsable y dejamos documentada la l\u00f3gica de defensa preventiva." },
+      { week: "Continuo", title: "Mantenimiento", description: "Actualizamos el expediente conforme evolucionan las operaciones, nuevos documentos o posibles requerimientos de autoridad." },
     ],
-    banner: "3 semanas para blindar lo que tardaste a\u00f1os en construir.",
+    banner: "Tres semanas para estructurar la evidencia que tardaste a\u00f1os en construir.",
   },
 
   cta: {
     sectionId: "cta-final",
-    title: "Tu pr\u00f3xima auditor\u00eda no tiene que ser una crisis",
+    title: "Tu pr\u00f3xima revisi\u00f3n fiscal no tiene que ser una crisis",
     subtitle:
-      "Agenda una demo sin compromiso. Evaluamos tu situaci\u00f3n fiscal y te mostramos exactamente qu\u00e9 necesitas.",
-    cta: { label: "Agenda tu Demo Gratuita", href: "/contacto" },
-    ctaSecondary: { label: "Conoce Nuestros Servicios", href: "/servicios" },
+      "Agenda un diagn\u00f3stico sin compromiso. Evaluamos tu situaci\u00f3n documental y te mostramos qu\u00e9 elementos necesitan reforzarse.",
+    cta: { label: "Agenda un diagn\u00f3stico", href: "/contacto" },
+    ctaSecondary: { label: "Conoce nuestros servicios", href: "/servicios" },
   },
 
   serviciosGrid: {
     eyebrow: "Nuestros Servicios",
-    title: "Protecci\u00f3n fiscal integral",
+    title: "Materialidad fiscal documentada de extremo a extremo",
     subtitle:
-      "Tres l\u00edneas de servicio dise\u00f1adas para cubrir cada \u00e1ngulo de tu exposici\u00f3n fiscal.",
+      "Tres l\u00edneas de servicio dise\u00f1adas para cubrir cada \u00e1ngulo de tu exposici\u00f3n documental.",
     cta: { label: "Ver todos los servicios", href: "/servicios" },
     services: serviciosContent.services,
   },
@@ -233,7 +234,7 @@ export const homeContent = {
     eyebrow: "Seguridad y Custodia",
     title: "El custodio de tu evidencia fiscal",
     subtitle:
-      "No solo construimos tu expediente: lo resguardamos con trazabilidad, consistencia y preparación ante cualquier revisión del SAT.",
+      "No solo construimos tu expediente: lo resguardamos con trazabilidad documental, control de versiones, validaciones cruzadas y preparación preventiva ante revisiones fiscales.",
     pillars: [
       {
         icon: "FileSearch",
@@ -243,24 +244,24 @@ export const homeContent = {
       },
       {
         icon: "ShieldCheck",
-        title: "Audit-ready: defensa preventiva",
+        title: "Preparación preventiva",
         description:
-          "El expediente queda listo antes del requerimiento. Teoría del caso y matriz de consistencia construidas de antemano, no improvisadas.",
+          "El expediente se organiza antes del requerimiento. Teoría del caso y matriz de consistencia construidas de antemano, no improvisadas.",
       },
       {
         icon: "Cpu",
         title: "Consistencia por diseño",
         description:
-          "Nuestra tecnología genera, valida y organiza +50 documentos por operación con consistencia perfecta — sin huecos ni contradicciones.",
+          "Nuestra tecnología genera, valida y organiza +50 documentos por operación con consistencia — reduciendo huecos y contradicciones.",
       },
     ],
     proof: [
-      { value: "180", label: "Operaciones blindadas en un ejercicio" },
-      { value: "15/15", label: "Elementos de materialidad del SAT" },
+      { value: "180", label: "Operaciones documentadas en un ejercicio" },
+      { value: "15/15", label: "Elementos críticos de materialidad fiscal" },
       { value: "+50", label: "Documentos por operación" },
       { value: "9", label: "Carpetas estructuradas y trazables" },
     ],
-    note: "Honestidad ante todo: protegemos con lo que realmente hacemos — evidencia documental verificable, no promesas.",
+    note: "Honestidad ante todo: trabajamos con lo que realmente hacemos — evidencia documental verificable, no promesas.",
   },
 
   confianza: {
@@ -269,21 +270,21 @@ export const homeContent = {
     testimonials: [
       {
         quote:
-          "Con FEI logramos blindar m\u00e1s de 180 operaciones en un solo ejercicio fiscal. Su metodolog\u00eda es infalible.",
+          "FEI nos ayud\u00f3 a transformar evidencia dispersa en expedientes documentales estructurados por operaci\u00f3n. Hoy tenemos mayor claridad sobre qu\u00e9 respalda cada deducci\u00f3n.",
         author: "Director de Finanzas",
-        company: "Grupo Industrial del Norte",
+        company: "Empresa industrial",
       },
       {
         quote:
-          "Pasamos de tener 6 elementos de materialidad a 15/15. El SAT revis\u00f3 y no encontr\u00f3 nada que objetar.",
+          "Pasamos de documentos aislados a una matriz clara de materialidad fiscal. El proceso nos permiti\u00f3 identificar brechas y fortalecer nuestro soporte documental.",
         author: "CFO",
-        company: "Distribuidora Nacional, S.A.",
+        company: "Empresa nacional de distribuci\u00f3n",
       },
       {
         quote:
-          "Invertimos en FEI y el retorno fue inmediato. Deducciones blindadas al 100\u0025 en menos de 4 semanas.",
+          "La metodología de FEI nos dio orden, trazabilidad y una lógica documental clara para preparar nuestras operaciones ante posibles revisiones.",
         author: "Socio Director",
-        company: "Constructora Regio",
+        company: "Empresa de servicios",
       },
     ],
   },

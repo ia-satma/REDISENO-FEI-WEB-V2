@@ -53,9 +53,9 @@ export function IlloMotor({ className = "" }: { className?: string }) {
   );
 }
 
-export function IlloBlindaje({ className = "" }: { className?: string }) {
+export function IlloExpediente({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 200 150" className={className} role="img" aria-label="Expediente blindado">
+    <svg viewBox="0 0 200 150" className={className} role="img" aria-label="Expediente estructurado">
       {/* stacked folder */}
       <path {...base} d="M50 50h28l8 10h64v62H50z" />
       <path {...base} d="M58 60v54M150 78H58" />
@@ -106,7 +106,7 @@ export function IlloEntrega({ className = "" }: { className?: string }) {
 
 export function IlloCierre({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 110 90" className={className} role="img" aria-label="Cierre / blindaje">
+    <svg viewBox="0 0 110 90" className={className} role="img" aria-label="Cierre del expediente">
       <path {...ph} d="M55 14l24 8v16c0 16-10 26-24 32-14-6-24-16-24-32V22z" />
       <rect {...ph} stroke={CYAN} x="45" y="42" width="20" height="16" rx="3" />
       <path {...ph} stroke={CYAN} d="M49 42v-5a6 6 0 0 1 12 0v5" />

@@ -11,7 +11,7 @@ export const faqContent = {
         {
           question: "\u00bfQu\u00e9 es la materialidad fiscal?",
           answer:
-            "La materialidad fiscal es la capacidad de demostrar documentalmente que una operaci\u00f3n realmente ocurri\u00f3. El SAT evalua 15 elementos que van desde la existencia del proveedor hasta la evidencia de ejecuci\u00f3n del servicio. Sin materialidad, tus deducciones son vulnerables a rechazo.",
+            "La materialidad fiscal es la capacidad de demostrar, con evidencia documental suficiente, que una operaci\u00f3n realmente ocurri\u00f3, fue necesaria, fue ejecutada y tuvo sustancia econ\u00f3mica. Se sostiene en 15 elementos cr\u00edticos, desde la existencia del proveedor hasta la evidencia de ejecuci\u00f3n del servicio. Sin materialidad documentada, el soporte de tus deducciones queda expuesto en una revisi\u00f3n.",
         },
         {
           question: "\u00bfQu\u00e9 son los 15 elementos de materialidad?",
@@ -21,7 +21,7 @@ export const faqContent = {
         {
           question: "\u00bfPor qu\u00e9 no basta con tener facturas?",
           answer:
-            "La factura (CFDI) solo demuestra que se emiti\u00f3 un comprobante fiscal. No demuestra que el servicio se prest\u00f3, que fue necesario, ni que realmente se ejecut\u00f3. El SAT exige evidencia completa de la sustancia econ\u00f3mica de cada operaci\u00f3n.",
+            "La factura (CFDI) solo demuestra que se emiti\u00f3 un comprobante fiscal. No demuestra que el servicio se prest\u00f3, que fue necesario, ni que realmente se ejecut\u00f3. En una revisi\u00f3n fiscal, la empresa debe poder sustentar con evidencia documental la sustancia econ\u00f3mica de cada operaci\u00f3n.",
         },
       ],
     },
@@ -31,7 +31,7 @@ export const faqContent = {
         {
           question: "\u00bfQu\u00e9 incluye un expediente de materialidad?",
           answer:
-            "Cada expediente incluye m\u00e1s de 50 documentos organizados en 9 carpetas: identidad corporativa, contrataci\u00f3n, regularizaci\u00f3n, ejecuci\u00f3n, entregables t\u00e9cnicos, cierre, fiscal-contable y defensa preventiva. Todo listo para presentar ante el SAT.",
+            "Cada expediente incluye m\u00e1s de 50 documentos organizados en 9 carpetas: identidad corporativa, contrataci\u00f3n, cumplimiento del proveedor, ejecuci\u00f3n, entregables t\u00e9cnicos, cierre, fiscal-contable, defensa preventiva y bit\u00e1cora de trazabilidad. Todo organizado para responder ante una revisi\u00f3n fiscal.",
         },
         {
           question: "\u00bfCu\u00e1nto tiempo toma construir un expediente?",
@@ -41,7 +41,7 @@ export const faqContent = {
         {
           question: "\u00bfNecesito un expediente por cada operaci\u00f3n?",
           answer:
-            "S\u00ed. Cada operaci\u00f3n (contrato, servicio, compra) que quieras deducir necesita su propio expediente de materialidad. Esto es exactamente lo que el SAT revisa operaci\u00f3n por operaci\u00f3n.",
+            "S\u00ed. Cada operaci\u00f3n (contrato, servicio, compra) que quieras deducir necesita su propio expediente de materialidad. Esto es justamente lo que se revisa operaci\u00f3n por operaci\u00f3n en materia de materialidad fiscal.",
         },
         {
           question: "\u00bfQu\u00e9 pasa si ya tengo una auditor\u00eda en curso?",
@@ -56,7 +56,7 @@ export const faqContent = {
         {
           question: "\u00bfCu\u00e1nto cuesta el servicio?",
           answer:
-            "El costo depende del n\u00famero de operaciones y su complejidad. Ofrecemos un diagn\u00f3stico gratuito donde evaluamos tu situaci\u00f3n y presentamos una cotizaci\u00f3n detallada. El ROI promedio es de 35x sobre la inversi\u00f3n.",
+            "El costo depende del n\u00famero de operaciones y su complejidad. Ofrecemos un diagn\u00f3stico inicial sin compromiso donde evaluamos tu situaci\u00f3n documental y presentamos una propuesta detallada. El valor documental estructurado equivale, en promedio, a 35x la inversi\u00f3n.",
         },
         {
           question: "\u00bfC\u00f3mo empiezo?",

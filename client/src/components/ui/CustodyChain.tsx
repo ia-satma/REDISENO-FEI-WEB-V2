@@ -7,8 +7,8 @@ const CHAIN = [
   { icon: Inbox, label: "Recepción", sub: "Documentos capturados" },
   { icon: Layers, label: "Versionado", sub: "Fechado y trazable" },
   { icon: CheckCircle2, label: "Validación", sub: "Consistencia cruzada" },
-  { icon: ShieldCheck, label: "Blindaje", sub: "15/15 elementos" },
-  { icon: FileCheck2, label: "Audit-ready", sub: "Listo para el SAT" },
+  { icon: ShieldCheck, label: "Integración", sub: "15 elementos críticos" },
+  { icon: FileCheck2, label: "Preparación", sub: "Preparado para revisión" },
 ];
 
 /**

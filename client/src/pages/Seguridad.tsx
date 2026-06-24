@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Lock, GitBranch, ShieldCheck, ArrowRight, Check, FolderTree, BadgeCheck } from "lucide-react";
+import { Lock, GitBranch, ShieldCheck, ArrowRight, Check, X, FolderTree, BadgeCheck, ScrollText, KeyRound } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import PageHero from "@/components/ui/PageHero";
 import SectionHead from "@/components/ui/SectionHead";
@@ -16,7 +16,7 @@ export default function Seguridad() {
     <div className="site-light">
       <SEOHead
         title="Seguridad y Custodia — FEI Consultores"
-        description="Cómo FEI resguarda tu evidencia fiscal: cadena de custodia del expediente, estructura de 9 carpetas, trazabilidad, audit-ready y transparencia."
+        description="Cómo FEI resguarda tu evidencia fiscal: cadena de custodia documental, estructura de 9 carpetas, trazabilidad, seguridad de la información y alcance claro del servicio."
       />
 
       <PageHero eyebrow={s.hero.eyebrow} eyebrowIcon={Lock} title={s.hero.title} subtitle={s.hero.subtitle} />
@@ -118,7 +118,7 @@ export default function Seguridad() {
       <section className="section-pad bg-[#f7f9fc]">
         <div className="container-site">
           <SectionHead eyebrow={s.garantias.eyebrow} eyebrowIcon={BadgeCheck} title={s.garantias.title} />
-          <motion.div {...inViewProps} variants={staggerContainer(0.1)} className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <motion.div {...inViewProps} variants={staggerContainer(0.1)} className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {s.garantias.items.map((g) => {
               const Icon = getIcon(g.icon);
               return (
@@ -129,6 +129,62 @@ export default function Seguridad() {
                 </motion.div>
               );
             })}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── Seguridad de la información ─────────────────────────────── */}
+      <section className="section-pad bg-white">
+        <div className="container-site">
+          <SectionHead eyebrow={s.infoSeguridad.eyebrow} eyebrowIcon={KeyRound} title={s.infoSeguridad.title} subtitle={s.infoSeguridad.intro} />
+          <motion.div {...inViewProps} variants={staggerContainer(0.08)} className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {s.infoSeguridad.items.map((it) => {
+              const Icon = getIcon(it.icon);
+              return (
+                <motion.div key={it.title} variants={scaleIn} whileHover={{ y: -4 }} className="card-l card-l-hover">
+                  <span className="chip-icon"><Icon className="h-5 w-5" /></span>
+                  <h3 className="mt-4 font-heading text-base font-bold text-navy">{it.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-500">{it.desc}</p>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── Alcance claro del servicio (lo que hacemos / no hacemos) ── */}
+      <section className="section-pad bg-[#f7f9fc]">
+        <div className="container-site">
+          <SectionHead eyebrow={s.alcance.eyebrow} eyebrowIcon={ScrollText} title={s.alcance.title} subtitle={s.alcance.intro} />
+          <motion.div {...inViewProps} variants={staggerContainer(0.1)} className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <motion.div variants={scaleIn} className="card-l card-l-lg">
+              <div className="flex items-center gap-2.5">
+                <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600 ring-1 ring-emerald-200"><Check className="h-5 w-5" /></span>
+                <h3 className="font-heading text-lg font-bold text-navy">{s.alcance.hacemosLabel}</h3>
+              </div>
+              <ul className="mt-5 space-y-3">
+                {s.alcance.hacemos.map((it) => (
+                  <li key={it} className="flex items-start gap-3 text-sm leading-relaxed text-slate-600">
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                    {it}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+            <motion.div variants={scaleIn} className="card-l card-l-lg">
+              <div className="flex items-center gap-2.5">
+                <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-rose-50 text-rose-500 ring-1 ring-rose-200"><X className="h-5 w-5" /></span>
+                <h3 className="font-heading text-lg font-bold text-navy">{s.alcance.noHacemosLabel}</h3>
+              </div>
+              <ul className="mt-5 space-y-3">
+                {s.alcance.noHacemos.map((it) => (
+                  <li key={it} className="flex items-start gap-3 text-sm leading-relaxed text-slate-600">
+                    <X className="mt-0.5 h-4 w-4 shrink-0 text-rose-400" />
+                    {it}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -166,7 +222,7 @@ export default function Seguridad() {
               <div className="relative mx-auto max-w-xl">
                 <h2 className="font-heading text-2xl font-extrabold text-white md:text-3xl">{s.cta.title}</h2>
                 <p className="mx-auto mt-4 text-gray-300">{s.cta.subtitle}</p>
-                <Link href="/contacto"><button className="btn-cyan mx-auto mt-8">Agenda tu demo<ArrowRight className="h-5 w-5" /></button></Link>
+                <Link href="/contacto"><button className="btn-cyan mx-auto mt-8">Agenda un diagnóstico<ArrowRight className="h-5 w-5" /></button></Link>
               </div>
             </div>
           </motion.div>

@@ -127,7 +127,7 @@ export const legalContent = {
       {
         title: "Trazabilidad y Cadena de Custodia",
         content:
-          "Cada expediente sigue una cadena de custodia documentada: recepción, versionado, validación, blindaje y disposición audit-ready. En todo momento es posible saber qué respalda cada operación y cómo se construyó.",
+          "Cada expediente sigue una cadena de custodia documentada: recepción, versionado, validación, integración y preparación para revisión. En todo momento es posible saber qué respalda cada operación y cómo se construyó.",
       },
       {
         title: "Resguardo y Continuidad",

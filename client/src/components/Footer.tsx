@@ -118,7 +118,10 @@ export default function Footer() {
           <p className="text-xs text-slate-400">{footer.copyright}</p>
           <div className="flex flex-wrap items-center justify-center gap-2">
             {footer.certifications.map((cert) => (
-              <span key={cert} className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[10px] font-medium text-slate-400">{cert}</span>
+              <span key={cert.label} className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[10px] font-medium text-slate-400">
+                {cert.label}
+                {cert.draft && <span className="text-[8px] font-semibold uppercase tracking-wide text-slate-300">(borrador)</span>}
+              </span>
             ))}
           </div>
           <div className="flex items-center gap-4">

@@ -645,3 +645,52 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Print / "Save as PDF": scroll-reveal sections (Framer Motion) keep their
+   initial opacity:0 when they never enter the viewport, so they printed BLANK.
+   Force everything visible, flatten motion, keep dark bands readable, and stop
+   cards/sections from being split across pages. */
+@media print {
+  *,
+  *::before,
+  *::after {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* The section-curve overlap (negative margin) can clip content when paginated. */
+  .section-curve {
+    margin-top: 0 !important;
+  }
+
+  /* Print background colors so white text on navy bands stays readable. */
+  body,
+  section,
+  .bg-navy,
+  .bg-navy-dark,
+  .card-l {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Avoid awkward page breaks through a card, list item or illustration. */
+  section,
+  .card-l,
+  .chip-icon,
+  li,
+  img,
+  svg {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Non-printable chrome: sticky header, floating CTA, decorative marquees. */
+  header,
+  .fixed,
+  [aria-label*="por correo"] {
+    display: none !important;
+  }
+}

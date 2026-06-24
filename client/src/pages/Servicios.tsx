@@ -48,7 +48,7 @@ export default function Servicios() {
                     <p className="mt-1.5 text-sm font-semibold text-cyan-700">{service.subtitle}</p>
                     <p className="mt-5 leading-relaxed text-slate-500">{service.description}</p>
                     <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-                      <Link href="/contacto"><button className="btn-navy">Solicitar cotización<ArrowRight className="h-4 w-4" /></button></Link>
+                      <Link href="/contacto"><button className="btn-navy">Solicitar diagnóstico<ArrowRight className="h-4 w-4" /></button></Link>
                       <div className="rounded-xl border border-cyan/20 bg-cyan/[0.06] px-4 py-2.5 text-sm font-medium text-cyan-700">{service.result}</div>
                     </div>
                   </div>
@@ -76,7 +76,7 @@ export default function Servicios() {
       <section className="section-pad bg-[#f7f9fc]">
         <div className="container-site">
           <motion.h2 {...inViewProps} variants={fadeUp} className="display-md text-center">{sv.process.title}</motion.h2>
-          <motion.div {...inViewProps} variants={staggerContainer(0.1)} className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <motion.div {...inViewProps} variants={staggerContainer(0.1)} className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {sv.process.steps.map((step, i) => {
               const Icon = STEP_ICONS[i % STEP_ICONS.length];
               return (

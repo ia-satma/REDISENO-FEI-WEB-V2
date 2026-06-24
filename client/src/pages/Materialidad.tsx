@@ -16,15 +16,15 @@ export default function Materialidad() {
   return (
     <div className="site-light">
       <SEOHead
-        title="Los 15 elementos de materialidad del SAT"
-        description="Qué evalúa el SAT para considerar real una operación, y cómo FEI cubre los 15 elementos de materialidad fiscal."
+        title="Los 15 elementos críticos de materialidad fiscal"
+        description="Qué sustenta la materialidad de una operación, y cómo FEI estructura el expediente alrededor de 15 elementos críticos de materialidad fiscal."
       />
 
       <PageHero
         eyebrow="Materialidad Fiscal"
         eyebrowIcon={Scale}
-        title="Los 15 elementos que el SAT evalúa"
-        subtitle="La materialidad es la capacidad de demostrar, documentalmente, que una operación realmente ocurrió. El promedio de las empresas cubre solo 6 de 15. FEI te lleva a 15/15."
+        title="Los 15 elementos críticos de materialidad fiscal"
+        subtitle="La materialidad fiscal consiste en demostrar, con evidencia documental suficiente, que una operación realmente ocurrió, fue necesaria, fue ejecutada y tuvo sustancia económica. FEI estructura cada expediente alrededor de 15 elementos críticos para reducir brechas documentales ante una revisión fiscal."
       >
         <div className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-navy px-6 py-4">
           <span className="font-heading text-3xl font-extrabold text-cyan">15/15</span>
@@ -37,8 +37,8 @@ export default function Materialidad() {
           <SectionHead
             eyebrow="Los 15 elementos"
             eyebrowIcon={ListChecks}
-            title="Agrupados como los evalúa el SAT"
-            subtitle="No es una lista suelta: la materialidad se sostiene en 5 frentes. Si uno falla, toda la deducción queda expuesta. FEI los blinda los 15."
+            title="Agrupados en 5 frentes documentales"
+            subtitle="La materialidad fiscal se sostiene en 5 frentes documentales. Cuando alguno presenta brechas, la operación puede quedar expuesta ante una revisión. FEI estructura la evidencia necesaria para cubrir los 15 elementos críticos."
           />
 
           <div className="mt-16 space-y-16 md:space-y-24">
@@ -111,8 +111,8 @@ export default function Materialidad() {
             <ShieldCheck className="pointer-events-none absolute -bottom-10 -left-10 h-44 w-44 text-cyan/[0.06]" strokeWidth={1} />
             <div className="relative mx-auto max-w-xl">
               <h2 className="font-heading text-2xl font-extrabold text-white md:text-3xl">¿En cuántos de los 15 estás hoy?</h2>
-              <p className="mx-auto mt-4 text-gray-300">Agenda una demo gratuita y te mostramos exactamente qué elementos te faltan.</p>
-              <Link href="/contacto"><button className="btn-cyan mx-auto mt-8">Agenda tu demo<ArrowRight className="h-5 w-5" /></button></Link>
+              <p className="mx-auto mt-4 text-gray-300">Agenda un diagnóstico sin compromiso y te mostramos qué elementos necesitan reforzarse.</p>
+              <Link href="/contacto"><button className="btn-cyan mx-auto mt-8">Agenda un diagnóstico<ArrowRight className="h-5 w-5" /></button></Link>
             </div>
           </motion.div>
         </div>

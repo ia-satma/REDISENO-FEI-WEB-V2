@@ -2,12 +2,13 @@ import { brand } from "../brand";
 
 export const footerContent = {
   description:
-    "Infraestructura de evidencia fiscal para empresas mexicanas. Construimos expedientes de materialidad que protegen tus operaciones.",
+    "Infraestructura de evidencia fiscal para empresas mexicanas. Construimos expedientes de materialidad que sustentan tus operaciones.",
   copyright: `\u00a9 ${new Date().getFullYear()} ${brand.name}. Todos los derechos reservados.`,
+  // draft: fundamentos legales pendientes de validaci\u00f3n con abogado fiscal antes de publicar.
   certifications: [
-    "Cumplimiento LISR Art. 5\u00b0",
-    "Norma CFF Art. 29/29-A",
-    "Criterios SAT Materialidad",
+    { label: "LISR Arts. 25 y 27", draft: true },
+    { label: "CFF Arts. 29, 29-A y 30", draft: true },
+    { label: "Criterios de materialidad fiscal", draft: false },
   ],
   newsletter: {
     title: "Inteligencia Fiscal",

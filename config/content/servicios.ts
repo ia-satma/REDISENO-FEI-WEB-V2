@@ -1,69 +1,69 @@
 export const serviciosContent = {
   hero: {
     eyebrow: "Nuestros Servicios",
-    title: "Materialidad fiscal que protege tu operaci\u00f3n",
+    title: "Materialidad fiscal que sustenta tu operación",
     subtitle:
-      "Tres l\u00edneas de servicio dise\u00f1adas para cubrir cada \u00e1ngulo de tu exposici\u00f3n fiscal.",
+      "Tres líneas de servicio diseñadas para cubrir cada ángulo de tu exposición documental.",
   },
 
   services: [
     {
       id: "diagnostico",
       icon: "Search",
-      title: "Diagn\u00f3stico de Materialidad",
-      subtitle: "Evaluaci\u00f3n completa de tu situaci\u00f3n fiscal",
+      title: "Diagnóstico de Materialidad",
+      subtitle: "Evaluación documental de tus operaciones",
       description:
-        "Analizamos tus operaciones contra los 15 elementos de materialidad que el SAT eval\u00faa. Identificamos brechas, priorizamos riesgos y dise\u00f1amos el plan de blindaje.",
+        "Analizamos tus operaciones frente a 15 elementos críticos de materialidad fiscal. Identificamos brechas documentales, priorizamos riesgos y diseñamos un plan de integración del expediente.",
       includes: [
-        "An\u00e1lisis de operaciones actuales",
-        "Evaluaci\u00f3n de 15 elementos de materialidad",
-        "Mapa de riesgos fiscales",
-        "Plan de acci\u00f3n priorizado",
+        "Análisis de operaciones actuales",
+        "Evaluación de 15 elementos críticos de materialidad",
+        "Mapa de brechas documentales",
+        "Plan de integración documental priorizado",
         "Reporte ejecutivo de hallazgos",
       ],
-      result: "Sabes exactamente d\u00f3nde est\u00e1s y qu\u00e9 necesitas.",
+      result: "Identificas tus brechas documentales y el plan para cerrarlas.",
     },
     {
       id: "evidencia",
       icon: "FileStack",
-      title: "Organización de Evidencia Documental",
-      subtitle: "Expedientes completos de materialidad",
+      title: "Expediente Documental Fiscal",
+      subtitle: "Expedientes documentales de materialidad fiscal",
       description:
-        "Construimos el expediente documental completo para cada operaci\u00f3n. M\u00e1s de 50 documentos organizados en 9 carpetas, listos para cualquier revisi\u00f3n del SAT.",
+        "Construimos el expediente documental de cada operación con evidencia contractual, operativa, fiscal y contable. La documentación se organiza en una estructura de carpetas y matrices preparada para consulta, revisión y seguimiento.",
       includes: [
         "Contrato de servicios profesionales",
-        "Documentaci\u00f3n de ejecuci\u00f3n (minutas, reportes, correspondencia)",
-        "Entregables t\u00e9cnicos completos (7+ por operaci\u00f3n)",
-        "P\u00f3lizas contables y conciliaci\u00f3n fiscal",
-        "Teor\u00eda del caso y defensa preventiva",
+        "Documentación de ejecución (minutas, reportes, correspondencia)",
+        "Entregables técnicos completos (7+ por operación)",
+        "Pólizas contables y conciliación fiscal",
+        "Teoría del caso y matriz de consistencia documental",
       ],
-      result: "Expediente blindado listo para auditor\u00eda.",
+      result: "Expediente estructurado y preparado para revisión.",
     },
     {
       id: "defensa",
       icon: "Shield",
       title: "Defensa Fiscal Preventiva",
-      subtitle: "Preparaci\u00f3n ante requerimientos del SAT",
+      subtitle: "Preparación ante requerimientos de la autoridad",
       description:
-        "No esperamos a que llegue el requerimiento. Construimos la defensa antes de que la necesites. Teor\u00eda del caso, matriz de consistencia y estrategia de respuesta documentada.",
+        "No esperamos a que llegue un requerimiento. Preparamos el expediente documental desde antes, integrando teoría del caso, matriz de consistencia y soporte organizado para responder con mayor claridad ante una revisión fiscal.",
       includes: [
-        "Teor\u00eda del caso por operaci\u00f3n",
+        "Teoría del caso por operación",
         "Matriz de consistencia documental",
         "Memo de riesgos identificados",
         "Estrategia de respuesta ante requerimientos",
-        "Soporte t\u00e9cnico en caso de auditor\u00eda",
+        "Soporte técnico ante requerimientos de autoridad",
       ],
-      result: "Si llega la auditor\u00eda, ya est\u00e1s listo.",
+      result: "Si llega una revisión, tu evidencia ya está organizada.",
     },
   ],
 
   process: {
-    title: "\u00bfC\u00f3mo funciona?",
+    title: "¿Cómo funciona?",
     steps: [
-      { number: "1", title: "Agenda", description: "Llamada de diagn\u00f3stico sin compromiso de 30 minutos." },
-      { number: "2", title: "Evaluamos", description: "Analizamos tus operaciones y dise\u00f1amos tu expediente." },
-      { number: "3", title: "Construimos", description: "Generamos toda la evidencia documental." },
-      { number: "4", title: "Entregamos", description: "Expediente completo listo para auditor\u00eda." },
+      { number: "1", title: "Agenda un diagnóstico", description: "Llamada inicial de 30 minutos para entender tus operaciones y nivel de exposición documental." },
+      { number: "2", title: "Evaluamos", description: "Analizamos tus operaciones, documentos existentes y brechas frente a los elementos críticos de materialidad." },
+      { number: "3", title: "Construimos", description: "Integramos evidencia contractual, operativa, fiscal y contable en un expediente estructurado por operación." },
+      { number: "4", title: "Entregamos", description: "Entregamos el expediente organizado, la matriz de consistencia y las recomendaciones de mantenimiento documental." },
     ],
   },
 } as const;

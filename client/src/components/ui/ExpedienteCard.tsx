@@ -49,7 +49,7 @@ export default function ExpedienteCard() {
             </div>
             <span className="badge-cyan shrink-0">
               <ShieldCheck className="h-3.5 w-3.5" />
-              Blindado
+              Validado
             </span>
           </div>
 

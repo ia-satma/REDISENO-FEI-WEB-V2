@@ -16,14 +16,14 @@ export default function Metodologia() {
     <div className="site-light">
       <SEOHead
         title="Metodología — cómo construimos tu expediente"
-        description="4 fases sistemáticas para construir evidencia de materialidad real. Activo en 3 semanas, sin interrumpir tu operación."
+        description="4 fases de construcción documental para estructurar evidencia de materialidad fiscal. Implementación desde 3 semanas, sin interrumpir tu operación."
       />
 
       <PageHero
         eyebrow="La Metodología"
         eyebrowIcon={Workflow}
-        title="Cada expediente, un traje a la medida"
-        subtitle="No aplicamos recetas. Entendemos tu operación y construimos la evidencia que la respalda, en 4 fases sistemáticas."
+        title="Metodología documental diseñada para cada operación"
+        subtitle="No aplicamos formatos genéricos. Analizamos la naturaleza de cada operación, identificamos la evidencia requerida y construimos un expediente documental consistente, trazable y preparado para revisión."
       />
 
       <MetodologiaLight />
@@ -35,8 +35,9 @@ export default function Metodologia() {
             <span className="eyebrow">{impl.eyebrow}</span>
             <h2 className="display-md mt-2">{impl.title}</h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-500">{impl.subtitle}</p>
+            <p className="mx-auto mt-3 max-w-xl text-sm italic text-slate-400">{impl.note}</p>
           </motion.div>
-          <motion.div {...inViewProps} variants={staggerContainer(0.1)} className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <motion.div {...inViewProps} variants={staggerContainer(0.1)} className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {impl.timeline.map((t, i) => {
               const Icon = TIMELINE_ICONS[i % TIMELINE_ICONS.length];
               return (
@@ -50,7 +51,7 @@ export default function Metodologia() {
             })}
           </motion.div>
           <motion.div {...inViewProps} variants={fadeUp} className="mt-12 text-center">
-            <Link href="/contacto"><button className="btn-navy mx-auto">Agenda tu demo<ArrowRight className="h-4 w-4" /></button></Link>
+            <Link href="/contacto"><button className="btn-navy mx-auto">Agenda un diagnóstico<ArrowRight className="h-4 w-4" /></button></Link>
           </motion.div>
         </div>
       </section>

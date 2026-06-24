@@ -35,7 +35,7 @@ function ExpedientePanel() {
               </div>
             </div>
             <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1 text-[11px] font-semibold text-emerald-600 ring-1 ring-emerald-200">
-              <ShieldCheck className="h-3.5 w-3.5" /> Blindado
+              <ShieldCheck className="h-3.5 w-3.5" /> Validado
             </span>
           </div>
           <div className="my-4 h-px bg-slate-100" />

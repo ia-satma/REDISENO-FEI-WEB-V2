@@ -4,8 +4,8 @@ export const materialidadContent = {
   categorias: [
     {
       n: "01",
-      title: "Capacidad del proveedor",
-      question: "¿Existe y de verdad puede hacerlo?",
+      title: "Capacidad y existencia del proveedor",
+      question: "¿Existe, está localizable y puede hacerlo?",
       icon: "Building2",
       tint: "bg-mint-soft",
       items: [
@@ -17,8 +17,8 @@ export const materialidadContent = {
     },
     {
       n: "02",
-      title: "Soporte contractual",
-      question: "¿Qué se pactó y cómo?",
+      title: "Soporte contractual de la operación",
+      question: "¿Qué se pactó y bajo qué condiciones?",
       icon: "FileStack",
       tint: "bg-sky",
       items: [
@@ -29,8 +29,8 @@ export const materialidadContent = {
     },
     {
       n: "03",
-      title: "Evidencia de ejecución",
-      question: "¿Realmente ocurrió?",
+      title: "Evidencia de ejecución y entrega",
+      question: "¿Realmente ocurrió y se entregó?",
       icon: "FileSearch",
       tint: "bg-lavender",
       items: [
@@ -41,7 +41,7 @@ export const materialidadContent = {
     },
     {
       n: "04",
-      title: "Soporte financiero y fiscal",
+      title: "Soporte financiero, fiscal y contable",
       question: "¿Hay rastro del dinero?",
       icon: "Banknote",
       tint: "bg-mint-soft",
@@ -53,8 +53,8 @@ export const materialidadContent = {
     },
     {
       n: "05",
-      title: "Razonabilidad del negocio",
-      question: "¿Tiene sentido económico?",
+      title: "Razonabilidad económica y beneficio empresarial",
+      question: "¿Tiene sentido económico y beneficio para el negocio?",
       icon: "TrendingUp",
       tint: "bg-sky",
       items: [

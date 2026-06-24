@@ -2,11 +2,11 @@ import { BadgeCheck } from "lucide-react";
 import { Marquee } from "@/components/ui/Marquee";
 
 const ITEMS = [
-  "Cumplimiento LISR Art. 5º",
-  "Norma CFF Art. 29 / 29-A",
-  "Criterios SAT de Materialidad",
-  "Expedientes audit-ready",
-  "15/15 elementos cubiertos",
+  "LISR Arts. 25 y 27",
+  "CFF Arts. 29, 29-A y 30",
+  "Criterios de materialidad fiscal",
+  "Expedientes preparados para revisión",
+  "15/15 elementos críticos cubiertos",
   "+50 documentos por operación",
   "9 carpetas estructuradas",
   "Defensa preventiva documentada",

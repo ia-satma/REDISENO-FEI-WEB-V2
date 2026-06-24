@@ -4,9 +4,9 @@ import { Link } from "wouter";
 import { homeContent } from "@config/content/home";
 import { useSiteContent } from "@/hooks/useSiteContent";
 import { scaleIn, staggerContainer, fadeUp, inViewProps } from "@/lib/motion";
-import { IlloMateria, IlloBlindaje } from "@/components/ui/Illustrations";
+import { IlloMateria, IlloExpediente } from "@/components/ui/Illustrations";
 
-const FLUJOS = ["Recepción", "Causación", "Pago a proveedores", "Conciliación", "Defensa SAT"];
+const FLUJOS = ["Recepción", "Causación", "Pago a proveedores", "Conciliación", "Defensa preventiva"];
 
 /** Pastel illustration panels — the distinctive Payana "arquitectura" card pattern. */
 function PanelEspecialistas() {
@@ -42,7 +42,7 @@ function PanelAutomatizacion() {
 function PanelExpedientes() {
   return (
     <div className="relative flex h-44 items-center justify-center rounded-xl bg-lavender p-4">
-      <IlloBlindaje className="h-full w-auto" />
+      <IlloExpediente className="h-full w-auto" />
       <span className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-navy px-2.5 py-0.5 text-[10px] font-bold text-mint">
         9 carpetas
       </span>
@@ -59,7 +59,7 @@ export default function ArquitecturaSection() {
       <div className="container-site">
         <motion.div {...inViewProps} variants={fadeUp} className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">{s.eyebrow}</span>
-          <h2 className="display-md mt-2">La arquitectura de tu blindaje fiscal</h2>
+          <h2 className="display-md mt-2">{s.title}</h2>
           <p className="mt-5 text-lg leading-relaxed text-slate-500">{s.subtitle}</p>
         </motion.div>
 
