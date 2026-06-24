@@ -105,10 +105,11 @@ export default function Header() {
         </nav>
 
         <div className="hidden items-center gap-4 xl:flex">
-          <Link href={navigation.access.href}>
-            <span className="text-[14px] font-medium text-slate-600 transition-colors hover:text-navy">{navigation.access.label}</span>
-          </Link>
+          {/* Divider separates the nav tabs from the Acceso + CTA group */}
           <span aria-hidden="true" className="h-5 w-px bg-slate-200" />
+          <Link href={navigation.access.href}>
+            <span className="text-[14px] font-semibold text-cyan-700 transition-colors hover:text-cyan-800">{navigation.access.label}</span>
+          </Link>
           <Link href={navigation.cta.href}>
             <button className="btn-cyan whitespace-nowrap px-5 py-2.5 text-[14px]">
               {navigation.cta.label}
@@ -173,7 +174,7 @@ export default function Header() {
               </nav>
               <div className="mt-8 flex flex-col gap-3 border-t border-slate-200 pt-6">
                 <Link href={navigation.access.href} onClick={() => setOpen(false)}>
-                  <span className="block text-center text-base font-medium text-slate-600">{navigation.access.label}</span>
+                  <span className="block text-center text-base font-semibold text-cyan-700">{navigation.access.label}</span>
                 </Link>
                 <Link href={navigation.cta.href} onClick={() => setOpen(false)}>
                   <button className="btn-cyan w-full">{navigation.cta.label}<ArrowRight className="h-4 w-4" /></button>
