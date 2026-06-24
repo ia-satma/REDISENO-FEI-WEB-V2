@@ -20,6 +20,10 @@ const LABELS: Record<string, string> = {
   certifications: "Certificaciones", newsletter: "Boletín", placeholder: "Texto de ejemplo",
   successMessage: "Mensaje de éxito", errorMessage: "Mensaje de error", body: "Texto",
   copyright: "Aviso de copyright", proof: "Pruebas / métricas", question_: "Pregunta",
+  showEyebrows: "Mostrar etiquetas de sección", draft: "Borrador",
+  hacemos: "Lo que hacemos", noHacemos: "Lo que no hacemos",
+  hacemosLabel: "Título — hacemos", noHacemosLabel: "Título — no hacemos",
+  infoSeguridad: "Seguridad de la información", alcance: "Alcance del servicio",
 };
 
 function humanize(k: string) {

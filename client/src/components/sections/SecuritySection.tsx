@@ -17,7 +17,7 @@ export default function SecuritySection() {
 
       <div className="container-site relative px-5 sm:px-6 lg:px-8">
         <motion.div {...inViewProps} variants={fadeUp} className="mx-auto max-w-3xl text-center">
-          <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan/25 bg-cyan/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-cyan">
+          <span data-eyebrow className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan/25 bg-cyan/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-cyan">
             <Lock className="h-3.5 w-3.5" />
             {seg.eyebrow}
           </span>

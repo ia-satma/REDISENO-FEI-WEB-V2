@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FloatingDemoButton from "./components/FloatingDemoButton";
 import CookieBanner from "./components/CookieBanner";
+import EyebrowVisibility from "./components/EyebrowVisibility";
 import { Toaster } from "./components/ui/toaster";
 import { useSmoothScroll, scrollToTop } from "./hooks/useSmoothScroll";
 import { SiteContentProvider } from "./hooks/useSiteContent";
@@ -46,6 +47,7 @@ function App() {
 
   return (
     <SiteContentProvider>
+    <EyebrowVisibility />
     <div className={`flex min-h-screen flex-col ${!isAdmin && !isPortal ? "noise-overlay" : ""}`}>
       {!isAdmin && !isPortal && <Header />}
       <Toaster />

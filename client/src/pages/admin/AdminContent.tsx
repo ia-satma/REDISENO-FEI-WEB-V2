@@ -14,6 +14,7 @@ import { seguridadContent } from "@config/content/seguridad";
 import { footerContent } from "@config/content/footer";
 import { legalContent } from "@config/content/legal";
 import { materialidadContent } from "@config/content/materialidad";
+import { settingsContent } from "@config/content/settings";
 
 const GROUPS: { key: string; label: string; def: Record<string, unknown> }[] = [
   { key: "home", label: "Inicio", def: homeContent as Record<string, unknown> },
@@ -23,6 +24,7 @@ const GROUPS: { key: string; label: string; def: Record<string, unknown> }[] = [
   { key: "faq", label: "Preguntas frecuentes", def: faqContent as Record<string, unknown> },
   { key: "footer", label: "Pie de página", def: footerContent as Record<string, unknown> },
   { key: "legal", label: "Documentos legales", def: legalContent as Record<string, unknown> },
+  { key: "settings", label: "Configuración", def: settingsContent as Record<string, unknown> },
 ];
 
 interface Override {

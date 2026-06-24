@@ -460,6 +460,13 @@
     @apply mb-4 inline-flex items-center gap-2 rounded-full border border-cyan/25 bg-cyan/[0.07] px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-700;
   }
 
+  /* Global toggle (CMS: settings.showEyebrows). When `hide-eyebrows` is on <html>
+     every section eyebrow + the hero badge + the Security badge are hidden. */
+  .hide-eyebrows .eyebrow,
+  .hide-eyebrows [data-eyebrow] {
+    display: none;
+  }
+
   /* Display / heading scale (headings = Inter, same role as Payana's Apercu) */
   .display-xl {
     @apply font-heading text-[2.7rem] font-extrabold leading-[1.04] tracking-[-0.02em] text-navy sm:text-6xl lg:text-[4.25rem];
