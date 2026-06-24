@@ -108,6 +108,7 @@ export default function Header() {
           <Link href={navigation.access.href}>
             <span className="text-[14px] font-medium text-slate-600 transition-colors hover:text-navy">{navigation.access.label}</span>
           </Link>
+          <span aria-hidden="true" className="h-5 w-px bg-slate-200" />
           <Link href={navigation.cta.href}>
             <button className="btn-cyan px-5 py-2.5 text-[14px]">
               {navigation.cta.label}
