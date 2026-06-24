@@ -57,6 +57,13 @@ app.use((req, res, next) => {
   // Help AI Worker — starts in idle mode, activate via POST /api/admin/helpai/start
   console.log("[helpai-worker] Disponible. Activar via POST /api/admin/helpai/start");
 
+  // Unknown /api routes (typo or wrong method) → JSON 404, BEFORE the SPA
+  // fallback. Otherwise prod serves the SPA HTML with 200 and dev hangs on the
+  // Vite proxy. Keeps API clients on a clean contract.
+  app.use("/api", (_req, res) => {
+    res.status(404).json({ error: "API endpoint not found" });
+  });
+
   // ── Vite dev server or static serving ──────────────────────────────
   if (process.env.NODE_ENV !== "production") {
     const { createServer: createViteServer } = await import("vite");
@@ -96,6 +103,18 @@ app.use((req, res, next) => {
       res.sendFile(path.resolve(distPath, "index.html"));
     });
   }
+
+  // Global error handler — always JSON, never leaks stack traces to clients.
+  // Catches body-parser errors (e.g. malformed JSON → 400) and anything thrown
+  // downstream. Stack is logged server-side only.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  app.use((err: any, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+    const status = err?.status || err?.statusCode || (err?.type === "entity.parse.failed" ? 400 : 500);
+    if (status >= 500) console.error("[error]", err?.stack || err);
+    if (!res.headersSent) {
+      res.status(status).json({ error: status === 400 ? "Solicitud inválida" : "Error interno del servidor" });
+    }
+  });
 
   // ── Start listening ────────────────────────────────────────────────
   const PORT = parseInt(process.env.PORT || "5000", 10);

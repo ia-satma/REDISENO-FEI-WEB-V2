@@ -166,17 +166,20 @@ export type SiteContent = typeof siteContent.$inferSelect;
 // ---------------------------------------------------------------------------
 // Zod schemas for validation
 // ---------------------------------------------------------------------------
-export const insertContactSchema = createInsertSchema(contactSubmissions).omit({
-  id: true,
-  status: true,
-  createdAt: true,
-});
+export const insertContactSchema = createInsertSchema(contactSubmissions)
+  .omit({ id: true, status: true, createdAt: true })
+  // Harden public input: real email format + sane length caps (anti-spam/garbage).
+  .extend({
+    name: z.string().trim().min(1).max(200),
+    email: z.string().trim().email().max(320),
+    message: z.string().trim().min(1).max(5000),
+  });
 
-export const insertNewsletterSchema = createInsertSchema(newsletterSubscribers).omit({
-  id: true,
-  active: true,
-  createdAt: true,
-});
+export const insertNewsletterSchema = createInsertSchema(newsletterSubscribers)
+  .omit({ id: true, active: true, createdAt: true })
+  .extend({
+    email: z.string().trim().email().max(320),
+  });
 
 export const insertBlogPostSchema = createInsertSchema(blogPosts).omit({
   id: true,
