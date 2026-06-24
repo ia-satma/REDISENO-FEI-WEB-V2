@@ -49,8 +49,8 @@ export default function Header() {
           <img src={asset(brand.logo.main)} alt={brand.name} className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]" />
         </Link>
 
-        {/* Desktop nav with dropdowns */}
-        <nav className="hidden items-center gap-1 lg:flex">
+        {/* Desktop nav with dropdowns (full row only ≥xl; below that → hamburger) */}
+        <nav className="hidden items-center gap-1 xl:flex">
           {/* "Inicio" appears only when you're not already on the home page. */}
           {location !== "/" && (
             <Link href="/">
@@ -104,13 +104,13 @@ export default function Header() {
           )}
         </nav>
 
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-4 xl:flex">
           <Link href={navigation.access.href}>
             <span className="text-[14px] font-medium text-slate-600 transition-colors hover:text-navy">{navigation.access.label}</span>
           </Link>
           <span aria-hidden="true" className="h-5 w-px bg-slate-200" />
           <Link href={navigation.cta.href}>
-            <button className="btn-cyan px-5 py-2.5 text-[14px]">
+            <button className="btn-cyan whitespace-nowrap px-5 py-2.5 text-[14px]">
               {navigation.cta.label}
               <ArrowRight className="h-3.5 w-3.5" />
             </button>
@@ -119,7 +119,7 @@ export default function Header() {
 
         <button
           onClick={() => setOpen(!open)}
-          className="flex h-10 w-10 items-center justify-center rounded-xl text-navy transition-all duration-200 hover:bg-slate-100 lg:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-xl text-navy transition-all duration-200 hover:bg-slate-100 xl:hidden"
           aria-label={open ? "Cerrar menú" : "Abrir menú"}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -134,7 +134,7 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 top-[74px] z-40 overflow-y-auto bg-white lg:hidden"
+            className="fixed inset-0 top-[74px] z-40 overflow-y-auto bg-white xl:hidden"
           >
             <div className="px-6 py-8">
               <nav className="flex flex-col gap-6">
