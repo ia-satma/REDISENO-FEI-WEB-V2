@@ -1,0 +1,60 @@
+# FEI Consultores — Infraestructura de Evidencia Fiscal
+# https://feiconsultores.com
+#
+# Permitimos a los motores de IA / answer engines citar el contenido público
+# (materialidad fiscal, los 15 elementos del SAT, EFOS 69-B, defensa preventiva).
+# Las áreas privadas (admin, portal de clientes, API) quedan fuera.
+
+User-agent: GPTBot
+Allow: /
+Disallow: /admin
+Disallow: /portal
+Disallow: /acceso
+Disallow: /api
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin
+Disallow: /portal
+Disallow: /acceso
+Disallow: /api
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin
+Disallow: /portal
+Disallow: /acceso
+Disallow: /api
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin
+Disallow: /portal
+Disallow: /acceso
+Disallow: /api
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin
+Disallow: /portal
+Disallow: /acceso
+Disallow: /api
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin
+Disallow: /portal
+Disallow: /acceso
+Disallow: /api
+
+User-agent: CCBot
+Allow: /
+Disallow: /admin
+Disallow: /portal
+Disallow: /acceso
+Disallow: /api
+
+Sitemap: https://feiconsultores.com/sitemap.xml

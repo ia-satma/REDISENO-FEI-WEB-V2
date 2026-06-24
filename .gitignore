@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+.fei-helpai-session/
+
+# macOS resource forks
+._*
+
+# Embedded PGlite local database
+.localdb/
+
+# CMS uploads
+uploads/

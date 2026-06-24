@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /portal
+Disallow: /portal/*
+Disallow: /api
+Disallow: /api/*
+Disallow: /acceso
+Disallow: /acceso/*
+
+Sitemap: https://feiconsultores.com/sitemap.xml
