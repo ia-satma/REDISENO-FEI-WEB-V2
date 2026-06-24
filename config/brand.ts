@@ -36,10 +36,6 @@ export const brand = {
       amber: "#D97706",
     },
   },
-  fonts: {
-    heading: "Hanken Grotesk",
-    body: "Inter",
-  },
   logo: {
     main: "/logo.png",
     white: "/logo-white.png",

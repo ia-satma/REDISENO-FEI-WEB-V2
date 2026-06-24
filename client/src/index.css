@@ -106,13 +106,6 @@
   }
 
   /* ── Glass surfaces (UPGRADED — stronger blur, inner light, noise) ── */
-  .glass-card {
-    @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md;
-  }
-
-  .glass-card-navy {
-    @apply rounded-2xl border border-cyan/10 bg-navy/60 backdrop-blur-md;
-  }
 
   .glass-surface {
     @apply rounded-2xl border border-white/[0.08] backdrop-blur-2xl;
@@ -124,29 +117,7 @@
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 0 0 0 transparent;
   }
 
-  .glass-surface-hover {
-    @apply glass-surface transition-all duration-300;
-  }
-
-  .glass-surface-hover:hover {
-    border-color: rgba(76, 201, 240, 0.25);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 0 24px rgba(76, 201, 240, 0.08);
-  }
-
-  .glass-surface-interactive {
-    @apply glass-surface transition-all duration-300 cursor-pointer;
-  }
-
-  .glass-surface-interactive:hover {
-    border-color: rgba(76, 201, 240, 0.3);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 32px rgba(76, 201, 240, 0.12);
-    transform: translateY(-2px);
-  }
-
   /* ── Text utilities ──────────────────────────────────────────────── */
-  .gradient-text {
-    @apply bg-gradient-to-r from-cyan to-cyan-light bg-clip-text text-transparent;
-  }
 
   .text-gradient-cyan {
     background: linear-gradient(135deg, #4CC9F0 0%, #7DD8F4 50%, #4CC9F0 100%);
@@ -155,16 +126,8 @@
     background-clip: text;
   }
 
-  .text-gradient-white {
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
   /* Minimalist: text glow removed (no text shadows) */
   .text-glow { text-shadow: none; }
-  .text-glow-strong { text-shadow: none; }
 
   .animated-border-glow {
     position: relative;
@@ -191,62 +154,16 @@
   }
 
   /* ── Typography presets ──────────────────────────────────────────── */
-  .section-label {
-    @apply mb-3 inline-block text-xs font-bold uppercase tracking-[0.2em] text-cyan;
-  }
-
-  .hero-heading {
-    @apply font-heading text-5xl font-extrabold leading-tight tracking-tight text-white md:text-6xl lg:text-7xl;
-  }
-
-  .section-heading {
-    @apply font-heading text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl;
-  }
-
-  .section-subheading {
-    @apply font-heading text-2xl font-bold text-white md:text-3xl;
-  }
-
-  .body-lg {
-    @apply text-lg leading-relaxed text-gray-400;
-  }
-
-  .body-md {
-    @apply text-base leading-relaxed text-gray-400;
-  }
 
   /* ── CTA buttons ─────────────────────────────────────────────────── */
-  .cta-primary {
-    @apply inline-flex items-center gap-2 rounded-xl bg-cyan px-6 py-3 font-heading text-base font-semibold text-navy transition-all duration-200 hover:bg-cyan-light hover:shadow-[0_0_24px_rgba(76,201,240,0.35)] active:scale-[0.98];
-  }
-
-  .cta-secondary {
-    @apply inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-6 py-3 font-heading text-base font-semibold text-white backdrop-blur-sm transition-all duration-200 hover:border-cyan/40 hover:bg-white/10 hover:text-cyan;
-  }
 
   /* ── Background patterns ─────────────────────────────────────────── */
-  .geo-bg {
-    background-image:
-      linear-gradient(rgba(76, 201, 240, 0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(76, 201, 240, 0.04) 1px, transparent 1px);
-    background-size: 60px 60px;
-  }
-
-  .dot-bg {
-    background-image: radial-gradient(rgba(76, 201, 240, 0.12) 1px, transparent 1px);
-    background-size: 24px 24px;
-  }
 
   .bg-grid-pattern {
     background-image:
       linear-gradient(rgba(76, 201, 240, 0.04) 1px, transparent 1px),
       linear-gradient(90deg, rgba(76, 201, 240, 0.04) 1px, transparent 1px);
     background-size: 48px 48px;
-  }
-
-  .bg-dot-pattern {
-    background-image: radial-gradient(rgba(76, 201, 240, 0.08) 1px, transparent 1px);
-    background-size: 20px 20px;
   }
 
   .bg-grid-fine {
@@ -266,117 +183,12 @@
     animation: orb-float 12s ease-in-out infinite;
   }
 
-  .gradient-orb-lg {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    filter: blur(120px);
-    background: radial-gradient(circle, rgba(76, 201, 240, 0.2) 0%, transparent 65%);
-    animation: orb-float 15s ease-in-out infinite reverse;
-  }
-
-  .gradient-orb-accent {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    filter: blur(100px);
-    background: radial-gradient(circle, rgba(59, 168, 208, 0.15) 0%, transparent 70%);
-    animation: orb-float 10s ease-in-out infinite;
-  }
-
-  .gradient-orb-purple {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    filter: blur(100px);
-    background: radial-gradient(circle, rgba(123, 97, 255, 0.15) 0%, transparent 70%);
-    animation: orb-float 14s ease-in-out infinite reverse;
-  }
-
   /* ── Section dividers ────────────────────────────────────────────── */
-  .section-divider-cyan {
-    @apply w-full;
-    height: 1px;
-    background: linear-gradient(90deg, transparent 0%, rgba(76, 201, 240, 0.3) 50%, transparent 100%);
-  }
 
   .section-divider-fade {
     @apply w-full;
     height: 1px;
     background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.08) 50%, transparent 100%);
-  }
-
-  /* ── Logo watermark ──────────────────────────────────────────────── */
-  .logo-watermark {
-    position: absolute;
-    pointer-events: none;
-    opacity: 0.03;
-    background-image: url("/branding/FEI-LOGO-NB.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-  /* ── Animated underline ──────────────────────────────────────────── */
-  .animated-underline {
-    @apply relative;
-  }
-
-  .animated-underline::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #4CC9F0, #7B61FF);
-    border-radius: 1px;
-    transition: width 0.3s ease, left 0.3s ease;
-  }
-
-  .animated-underline:hover::after,
-  .animated-underline.active::after {
-    width: 100%;
-    left: 0;
-  }
-
-  /* ── Shimmer effect overlay ──────────────────────────────────────── */
-  .shimmer-overlay {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .shimmer-overlay::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(255, 255, 255, 0.08) 50%,
-      transparent 100%
-    );
-    animation: shimmer 3s ease-in-out infinite;
-  }
-
-  /* ── Card variants ───────────────────────────────────────────────── */
-  .card-danger {
-    border-left: 3px solid #DC2626;
-  }
-
-  .card-warning {
-    border-left: 3px solid #F59E0B;
-  }
-
-  .card-info {
-    border-left: 3px solid #4CC9F0;
-  }
-
-  .card-success {
-    border-left: 3px solid #16A34A;
   }
 
   /* ── Icon container ──────────────────────────────────────────────── */
@@ -393,26 +205,8 @@
   }
 
   /* ── Stat counter ────────────────────────────────────────────────── */
-  .stat-value {
-    @apply font-heading text-5xl font-extrabold text-cyan md:text-6xl;
-  }
-
-  .stat-label {
-    @apply mt-1 text-sm text-gray-400;
-  }
 
   /* ── Input fields (dark theme) ───────────────────────────────────── */
-  .input-dark {
-    @apply w-full rounded-xl px-4 py-3 text-white placeholder-gray-500 transition-all duration-200;
-    background: rgba(26, 35, 50, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .input-dark:focus {
-    outline: none;
-    border-color: rgba(76, 201, 240, 0.4);
-    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.08);
-  }
 
   /* ── Badge / chip ────────────────────────────────────────────────── */
   .badge-cyan {
@@ -422,18 +216,6 @@
   }
 
   /* ── Prose dark theme override ───────────────────────────────────── */
-  .prose-dark {
-    --tw-prose-body: #9CA3AF;
-    --tw-prose-headings: #FFFFFF;
-    --tw-prose-links: #4CC9F0;
-    --tw-prose-bold: #E5E7EB;
-    --tw-prose-quotes: #D1D5DB;
-    --tw-prose-quote-borders: rgba(76, 201, 240, 0.3);
-    --tw-prose-code: #7DD8F4;
-    --tw-prose-hr: rgba(255, 255, 255, 0.08);
-    --tw-prose-th-borders: rgba(255, 255, 255, 0.1);
-    --tw-prose-td-borders: rgba(255, 255, 255, 0.06);
-  }
 }
 
 /* ════════════════════════════════════════════════════════════════════════
@@ -490,7 +272,6 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
   .card-l-lg { @apply p-8 md:p-10; }      /* 40px — Payana feature cards */
-  .card-l-sm { @apply p-6; }              /* dense cards */
   /* Hover = border + shadow only. The lift is done via Framer `whileHover`
      (animated cards) or a CSS transform on the static-card variants, so it
      never collides with Framer's inline transform. */
@@ -512,9 +293,6 @@
        reveal, and a CSS `transition: all` here causes the cards to stutter/flicker. */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
-  .card-pastel-lavender { @apply card-pastel; background: #ECE9FF; }
-  .card-pastel-mint  { @apply card-pastel; background: #D3FFF6; }
-  .card-pastel-sky   { @apply card-pastel; background: #D9E5FF; }
   .card-pastel-hover:hover {
     transform: translateY(-4px);
   }
