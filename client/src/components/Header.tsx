@@ -7,6 +7,7 @@ import { navigation } from "@config/navigation";
 import { getIcon } from "@/lib/icons";
 import { scrollToTop } from "@/hooks/useSmoothScroll";
 import { cn } from "@/lib/utils";
+import { asset } from "@/lib/asset";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(() => typeof window !== "undefined" && window.scrollY > 24);
@@ -45,7 +46,7 @@ export default function Header() {
           }}
           className="group flex items-center gap-3"
         >
-          <img src={brand.logo.main} alt={brand.name} className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]" />
+          <img src={asset(brand.logo.main)} alt={brand.name} className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]" />
         </Link>
 
         {/* Desktop nav with dropdowns */}
