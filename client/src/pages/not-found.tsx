@@ -30,7 +30,7 @@ export default function NotFound() {
         className="relative mt-2"
       >
         <h1 className="display-md">Página no encontrada</h1>
-        <p className="mx-auto mt-4 max-w-md text-slate-500">
+        <p className="mx-auto mt-4 max-w-md text-slate-600">
           La página que buscas no existe o fue movida. Verifica la URL o regresa al inicio.
         </p>
 

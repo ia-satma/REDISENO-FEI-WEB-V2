@@ -31,7 +31,7 @@ export default function PageHero({ eyebrow, eyebrowIcon: Icon, title, subtitle, 
           )}
           <h1 className="display-lg mt-3">{title}</h1>
           {subtitle && <p className="lead mx-auto mt-6 max-w-2xl">{subtitle}</p>}
-          {meta && <p className="mt-4 text-sm text-slate-400">{meta}</p>}
+          {meta && <p className="mt-4 text-sm text-slate-600">{meta}</p>}
           {children}
         </motion.div>
       </div>

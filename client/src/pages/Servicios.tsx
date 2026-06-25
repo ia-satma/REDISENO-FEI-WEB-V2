@@ -62,7 +62,7 @@ export default function Servicios() {
                     <span className="chip-icon mb-5 !h-14 !w-14"><Icon className="h-7 w-7" /></span>
                     <h2 className="font-heading text-2xl font-extrabold text-navy md:text-3xl">{service.title}</h2>
                     <p className="mt-1.5 text-sm font-semibold text-cyan-700">{service.subtitle}</p>
-                    <p className="mt-5 leading-relaxed text-slate-500">{service.description}</p>
+                    <p className="mt-5 leading-relaxed text-slate-600">{service.description}</p>
                     <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
                       <Link href="/contacto"><button className="btn-navy">Solicitar diagnóstico<ArrowRight className="h-4 w-4" /></button></Link>
                       <div className="rounded-xl border border-cyan/20 bg-cyan/[0.06] px-4 py-2.5 text-sm font-medium text-cyan-700">{service.result}</div>
@@ -70,7 +70,7 @@ export default function Servicios() {
                   </div>
                   <div className="lg:w-1/2">
                     <div className={`rounded-2xl ${panelTints[i % panelTints.length]} p-6 md:p-8`}>
-                      <h4 className="mb-5 font-heading text-xs font-bold uppercase tracking-[0.16em] text-navy/60">Incluye</h4>
+                      <h4 className="mb-5 font-heading text-xs font-bold uppercase tracking-[0.16em] text-navy/70">Incluye</h4>
                       <ul className="grid grid-cols-1 gap-3">
                         {service.includes.map((item, j) => (
                           <li key={j} className="flex items-start gap-3 text-sm text-navy">
@@ -102,7 +102,7 @@ export default function Servicios() {
                     <span className="absolute -right-1.5 -top-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-navy font-heading text-xs font-bold text-cyan">{step.number}</span>
                   </div>
                   <h3 className="font-heading text-base font-bold text-navy">{step.title}</h3>
-                  <p className="mt-2 text-sm text-slate-500">{step.description}</p>
+                  <p className="mt-2 text-sm text-slate-600">{step.description}</p>
                 </motion.div>
               );
             })}

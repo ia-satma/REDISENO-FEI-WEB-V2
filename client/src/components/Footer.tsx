@@ -36,18 +36,18 @@ export default function Footer() {
               <img src={asset(brand.logo.main)} alt={brand.name} width={113} height={32} loading="lazy" className="h-8 w-auto object-contain" />
             </Link>
             <p className="font-heading text-sm font-semibold text-navy/70">{brand.tagline}</p>
-            <p className="mt-4 text-sm leading-relaxed text-slate-500">{footer.description}</p>
+            <p className="mt-4 text-sm leading-relaxed text-slate-600">{footer.description}</p>
 
             <div className="mt-6 space-y-3">
-              <a href={`mailto:${brand.contact.email}`} className="group flex items-center gap-2.5 text-sm text-slate-500 transition-colors hover:text-cyan-700">
+              <a href={`mailto:${brand.contact.email}`} className="group flex items-center gap-2.5 text-sm text-slate-600 transition-colors hover:text-cyan-700">
                 <span className="chip-icon !h-8 !w-8 !rounded-lg"><Mail className="h-3.5 w-3.5" /></span>
                 {brand.contact.email}
               </a>
-              <a href={`tel:${brand.contact.phone.replace(/\s|\(|\)|-/g, "")}`} className="group flex items-center gap-2.5 text-sm text-slate-500 transition-colors hover:text-cyan-700">
+              <a href={`tel:${brand.contact.phone.replace(/\s|\(|\)|-/g, "")}`} className="group flex items-center gap-2.5 text-sm text-slate-600 transition-colors hover:text-cyan-700">
                 <span className="chip-icon !h-8 !w-8 !rounded-lg"><Phone className="h-3.5 w-3.5" /></span>
                 {brand.contact.phone}
               </a>
-              <span className="flex items-center gap-2.5 text-sm text-slate-500">
+              <span className="flex items-center gap-2.5 text-sm text-slate-600">
                 <span className="chip-icon !h-8 !w-8 !rounded-lg"><MapPin className="h-3.5 w-3.5" /></span>
                 {brand.contact.location}
               </span>
@@ -61,7 +61,7 @@ export default function Footer() {
             <ul className="space-y-3.5">
               {navigation.footerNav.servicios.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href}><span className="text-sm text-slate-500 transition-colors hover:text-navy">{item.label}</span></Link>
+                  <Link href={item.href}><span className="text-sm text-slate-600 transition-colors hover:text-navy">{item.label}</span></Link>
                 </li>
               ))}
             </ul>
@@ -74,7 +74,7 @@ export default function Footer() {
             <ul className="space-y-3.5">
               {navigation.footerNav.empresa.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href}><span className="text-sm text-slate-500 transition-colors hover:text-navy">{item.label}</span></Link>
+                  <Link href={item.href}><span className="text-sm text-slate-600 transition-colors hover:text-navy">{item.label}</span></Link>
                 </li>
               ))}
             </ul>
@@ -84,9 +84,9 @@ export default function Footer() {
             <h3 className="mb-5 font-heading text-xs font-bold uppercase tracking-[0.16em] text-cyan-700">
               {footer.newsletter.title}
             </h3>
-            <p className="mb-4 text-sm leading-relaxed text-slate-500">{footer.newsletter.description}</p>
+            <p className="mb-4 text-sm leading-relaxed text-slate-600">{footer.newsletter.description}</p>
             {status === "success" ? (
-              <div className="flex items-center gap-2.5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-600">
+              <div className="flex items-center gap-2.5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
                 <CheckCircle2 className="h-4 w-4 flex-shrink-0" />
                 {footer.newsletter.successMessage}
               </div>
@@ -115,21 +115,21 @@ export default function Footer() {
         <div className="my-10 h-px bg-slate-200" />
 
         <div className="flex flex-col items-center justify-between gap-5 sm:flex-row">
-          <p className="text-xs text-slate-400">{footer.copyright}</p>
+          <p className="text-xs text-slate-600">{footer.copyright}</p>
           <div className="flex flex-wrap items-center justify-center gap-2">
             {footer.certifications.map((cert) => (
-              <span key={cert.label} className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[10px] font-medium text-slate-400">
+              <span key={cert.label} className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[10px] font-medium text-slate-600">
                 {cert.label}
-                {cert.draft && <span className="text-[8px] font-semibold uppercase tracking-wide text-slate-300">(borrador)</span>}
+                {cert.draft && <span className="text-[8px] font-semibold uppercase tracking-wide text-slate-600">(borrador)</span>}
               </span>
             ))}
           </div>
           <div className="flex items-center gap-4">
             {navigation.footerNav.legal.map((item) => (
-              <Link key={item.href} href={item.href}><span className="text-xs text-slate-400 transition-colors hover:text-cyan-700">{item.label}</span></Link>
+              <Link key={item.href} href={item.href}><span className="text-xs text-slate-600 transition-colors hover:text-cyan-700">{item.label}</span></Link>
             ))}
             {brand.social.linkedin && (
-              <a href={brand.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-slate-400 transition-colors hover:text-cyan-700" aria-label="LinkedIn">
+              <a href={brand.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-slate-600 transition-colors hover:text-cyan-700" aria-label="LinkedIn">
                 <Linkedin className="h-3.5 w-3.5" />
               </a>
             )}

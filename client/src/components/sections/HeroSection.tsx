@@ -31,10 +31,10 @@ function ExpedientePanel() {
               <span className="chip-icon"><FolderClosed className="h-5 w-5" /></span>
               <div>
                 <p className="font-heading text-sm font-bold text-navy">Expediente de Materialidad</p>
-                <p className="text-xs text-slate-400">Operación · 9 carpetas</p>
+                <p className="text-xs text-slate-600">Operación · 9 carpetas</p>
               </div>
             </div>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1 text-[11px] font-semibold text-emerald-600 ring-1 ring-emerald-200">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1 text-[11px] font-semibold text-emerald-800 ring-1 ring-emerald-200">
               <ShieldCheck className="h-3.5 w-3.5" /> Validado
             </span>
           </div>
@@ -63,7 +63,7 @@ function ExpedientePanel() {
             </div>
             <div className="rounded-xl bg-cyan/10 px-4 py-3 text-center ring-1 ring-cyan/20">
               <p className="font-heading text-2xl font-extrabold text-navy">+50</p>
-              <p className="mt-0.5 text-[11px] text-slate-500">Documentos</p>
+              <p className="mt-0.5 text-[11px] text-slate-600">Documentos</p>
             </div>
           </div>
         </motion.div>
@@ -131,7 +131,7 @@ export default function HeroSection() {
               {hero.stats.map((s, i) => (
                 <div key={i} className="flex items-center gap-2">
                   <span className="font-heading text-2xl font-extrabold text-navy">{s.value}</span>
-                  <span className="max-w-[9rem] text-left text-xs leading-tight text-slate-500">{s.label}</span>
+                  <span className="max-w-[9rem] text-left text-xs leading-tight text-slate-600">{s.label}</span>
                 </div>
               ))}
             </motion.div>

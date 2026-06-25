@@ -29,10 +29,10 @@ export default function MetodologiaLight() {
                   <Illo className="h-20 w-auto transition-transform duration-500 group-hover:scale-[1.06]" />
                 </div>
                 <div className="flex items-baseline gap-2.5">
-                  <span className="font-heading text-3xl font-extrabold text-cyan/30">{p.number}</span>
+                  <span aria-hidden="true" className="font-heading text-3xl font-extrabold text-cyan/30">{p.number}</span>
                   <h3 className="font-heading text-lg font-bold text-navy">{p.title}</h3>
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-slate-500">{p.description}</p>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">{p.description}</p>
                 <ul className="mt-5 space-y-2 border-t border-slate-100 pt-4">
                   {p.items.map((it) => (
                     <li key={it} className="flex items-start gap-2 text-sm text-slate-600">

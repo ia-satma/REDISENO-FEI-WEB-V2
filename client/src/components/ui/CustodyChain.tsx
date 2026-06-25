@@ -60,7 +60,7 @@ export default function CustodyChain({ light = false }: { light?: boolean }) {
                     ? "border-cyan/50 bg-cyan/10 text-cyan-700 shadow-[0_0_22px_rgba(76,201,240,0.30)]"
                     : "border-cyan/60 bg-cyan/15 text-cyan shadow-[0_0_26px_rgba(76,201,240,0.35)]"
                   : light
-                    ? "border-slate-200 bg-slate-50 text-slate-400"
+                    ? "border-slate-200 bg-slate-50 text-slate-500"
                     : "border-white/10 bg-white/[0.03] text-gray-500",
               )}
             >
@@ -77,12 +77,12 @@ export default function CustodyChain({ light = false }: { light?: boolean }) {
             <p
               className={cn(
                 "mt-4 font-heading text-sm font-bold transition-colors duration-500",
-                on ? (light ? "text-navy" : "text-white") : light ? "text-slate-400" : "text-gray-400",
+                on ? (light ? "text-navy" : "text-white") : light ? "text-slate-500" : "text-gray-400",
               )}
             >
               {step.label}
             </p>
-            <p className={cn("mt-0.5 text-xs", light ? "text-slate-500" : "text-gray-500")}>{step.sub}</p>
+            <p className={cn("mt-0.5 text-xs", light ? "text-slate-600" : "text-gray-500")}>{step.sub}</p>
           </div>
         );
       })}

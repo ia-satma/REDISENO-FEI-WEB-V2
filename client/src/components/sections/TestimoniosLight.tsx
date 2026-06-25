@@ -36,7 +36,7 @@ export default function TestimoniosLight() {
               </p>
               <div className="mt-6 border-t border-navy/10 pt-5">
                 <p className="font-heading text-sm font-bold text-navy">{item.author}</p>
-                <p className="mt-0.5 text-xs text-navy/50">{item.company}</p>
+                <p className="mt-0.5 text-xs text-navy">{item.company}</p>
               </div>
             </motion.div>
           ))}

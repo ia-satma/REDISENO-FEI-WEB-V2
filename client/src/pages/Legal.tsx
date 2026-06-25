@@ -47,7 +47,7 @@ export default function Legal() {
                   className={`cursor-pointer rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors ${
                     d.slug === loc
                       ? "border-cyan/40 bg-cyan/10 text-cyan-700"
-                      : "border-slate-200 text-slate-500 hover:border-cyan/40 hover:text-cyan-700"
+                      : "border-slate-200 text-slate-600 hover:border-cyan/40 hover:text-cyan-700"
                   }`}
                 >
                   {d.label}
@@ -66,7 +66,7 @@ export default function Legal() {
                     </span>
                     {section.title}
                   </h2>
-                  <p className="pl-9 text-sm leading-7 text-slate-500">{section.content}</p>
+                  <p className="pl-9 text-sm leading-7 text-slate-600">{section.content}</p>
                   {i < doc.sections.length - 1 && <div className="mt-10 h-px bg-slate-100" />}
                 </motion.div>
               ))}

@@ -56,7 +56,7 @@ export default function Contacto() {
                 <div key={label} className="card-l flex items-start gap-4 p-5">
                   <span className="chip-icon"><Icon className="h-5 w-5" /></span>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.12em] text-slate-400">{label}</p>
+                    <p className="text-xs font-bold uppercase tracking-[0.12em] text-slate-600">{label}</p>
                     {href ? (
                       <a href={href} className="mt-1.5 block text-sm font-medium text-navy transition-colors hover:text-cyan-700">{value}</a>
                     ) : (
@@ -85,7 +85,7 @@ export default function Contacto() {
                 <div className="card-l flex h-full min-h-[400px] flex-col items-center justify-center p-12 text-center">
                   <CheckCircle2 className="mb-5 h-16 w-16 text-emerald-500" />
                   <h3 className="font-heading text-2xl font-bold text-navy">¡Mensaje enviado!</h3>
-                  <p className="mt-3 text-slate-500">Nos pondremos en contacto contigo pronto.</p>
+                  <p className="mt-3 text-slate-600">Nos pondremos en contacto contigo pronto.</p>
                   <button onClick={() => setFormState("idle")} className="btn-ghost-l mt-8">← Enviar otro mensaje</button>
                 </div>
               ) : (

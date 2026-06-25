@@ -15,7 +15,7 @@ const ITEMS = [
 export default function TrustMarquee() {
   return (
     <section className="relative z-0 bg-white py-9">
-      <p className="container-site mb-6 px-5 text-center text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+      <p className="container-site mb-6 px-5 text-center text-xs font-semibold uppercase tracking-[0.18em] text-slate-600">
         Construido sobre el marco fiscal mexicano
       </p>
       <Marquee speed={0.5}>

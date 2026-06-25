@@ -60,7 +60,7 @@ export default function ArquitecturaSection() {
         <motion.div {...inViewProps} variants={fadeUp} className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">{s.eyebrow}</span>
           <h2 className="display-md mt-2">{s.title}</h2>
-          <p className="mt-5 text-lg leading-relaxed text-slate-500">{s.subtitle}</p>
+          <p className="mt-5 text-lg leading-relaxed text-slate-600">{s.subtitle}</p>
         </motion.div>
 
         <motion.div
@@ -74,7 +74,7 @@ export default function ArquitecturaSection() {
               <motion.div key={col.title} variants={scaleIn} whileHover={{ y: -4 }} className="card-l card-l-lg card-l-hover card-bw group flex flex-col">
                 <Panel />
                 <h3 className="mt-6 font-heading text-xl font-bold text-navy">{col.title}</h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-500">{col.description}</p>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{col.description}</p>
                 <div className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-cyan-700">
                   Conoce más
                   <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

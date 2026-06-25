@@ -44,12 +44,12 @@ export default function Seguridad() {
                   <div className="md:flex-1">
                     <div className="flex items-center gap-3">
                       <span className="chip-icon !h-11 !w-11"><Icon className="h-5 w-5" /></span>
-                      <span className="font-heading text-xs font-bold uppercase tracking-[0.16em] text-cyan/60">
+                      <span className="font-heading text-xs font-bold uppercase tracking-[0.16em] text-cyan-700">
                         Etapa {st.n}
                       </span>
                     </div>
                     <h3 className="mt-4 font-heading text-xl font-bold text-navy">{st.title}</h3>
-                    <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-500">{st.description}</p>
+                    <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">{st.description}</p>
                   </div>
                   <ul className="grid gap-2.5 md:w-80 md:shrink-0">
                     {st.points.map((pt) => (
@@ -80,7 +80,7 @@ export default function Seguridad() {
                 <motion.div key={p.title} variants={scaleIn} whileHover={{ y: -4 }} className="card-l card-l-lg card-l-hover">
                   <span className="chip-icon !h-14 !w-14"><Icon className="h-7 w-7" /></span>
                   <h3 className="mt-5 font-heading text-xl font-bold text-navy">{p.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-500">{p.description}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-600">{p.description}</p>
                 </motion.div>
               );
             })}
@@ -100,10 +100,10 @@ export default function Seguridad() {
                   <span className="chip-icon shrink-0"><Icon className="h-5 w-5" /></span>
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="font-heading text-xs font-bold text-cyan/50">{c.n}</span>
+                      <span className="font-heading text-xs font-bold text-cyan-700">{c.n}</span>
                       <h3 className="font-heading text-sm font-bold text-navy">{c.name}</h3>
                     </div>
-                    <p className="mt-1 text-xs leading-relaxed text-slate-500">{c.desc}</p>
+                    <p className="mt-1 text-xs leading-relaxed text-slate-600">{c.desc}</p>
                   </div>
                 </motion.div>
               );
@@ -123,7 +123,7 @@ export default function Seguridad() {
                 <motion.div key={g.title} variants={scaleIn} whileHover={{ y: -4 }} className="card-l card-l-hover">
                   <span className="chip-icon"><Icon className="h-5 w-5" /></span>
                   <h3 className="mt-4 font-heading text-base font-bold text-navy">{g.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-500">{g.desc}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{g.desc}</p>
                 </motion.div>
               );
             })}
@@ -142,7 +142,7 @@ export default function Seguridad() {
                 <motion.div key={it.title} variants={scaleIn} whileHover={{ y: -4 }} className="card-l card-l-hover">
                   <span className="chip-icon"><Icon className="h-5 w-5" /></span>
                   <h3 className="mt-4 font-heading text-base font-bold text-navy">{it.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-500">{it.desc}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{it.desc}</p>
                 </motion.div>
               );
             })}
@@ -209,7 +209,7 @@ export default function Seguridad() {
             <div className="card-l card-l-lg text-center">
               <span className="chip-icon mx-auto !h-14 !w-14"><ShieldCheck className="h-7 w-7" /></span>
               <h2 className="mt-5 font-heading text-2xl font-bold text-navy">{s.transparencia.title}</h2>
-              <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-relaxed text-slate-500">{s.transparencia.body}</p>
+              <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-relaxed text-slate-600">{s.transparencia.body}</p>
             </div>
           </motion.div>
 

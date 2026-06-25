@@ -59,10 +59,10 @@ export default function Materialidad() {
                       <div>
                         <span className="text-xs font-bold uppercase tracking-[0.14em] text-cyan-700">Frente {cat.n}</span>
                         <h3 className="font-heading text-2xl font-bold text-navy">{cat.title}</h3>
-                        <p className="text-sm text-slate-500">{cat.question}</p>
+                        <p className="text-sm text-slate-600">{cat.question}</p>
                       </div>
                     </div>
-                    <span className="self-start rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-semibold text-slate-500 sm:self-center">
+                    <span className="self-start rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-semibold text-slate-600 sm:self-center">
                       {cat.items.length} {cat.items.length === 1 ? "elemento" : "elementos"}
                     </span>
                   </motion.div>
@@ -84,12 +84,12 @@ export default function Materialidad() {
                         >
                           <div className="flex items-start justify-between gap-3">
                             <span className="chip-icon"><Icon className="h-5 w-5" /></span>
-                            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-1 text-[11px] font-semibold text-emerald-600 ring-1 ring-emerald-200">
+                            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-1 text-[11px] font-semibold text-emerald-800 ring-1 ring-emerald-200">
                               <CheckCircle2 className="h-3.5 w-3.5" /> Cubierto
                             </span>
                           </div>
                           <h4 className="mt-4 font-heading text-base font-bold text-navy">{el.t}</h4>
-                          <p className="mt-2 text-sm leading-relaxed text-slate-500">{el.d}</p>
+                          <p className="mt-2 text-sm leading-relaxed text-slate-600">{el.d}</p>
                         </motion.div>
                       );
                     })}

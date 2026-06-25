@@ -25,7 +25,7 @@ export default function ProblemLight() {
               <motion.div key={card.title} variants={scaleIn} whileHover={{ y: -4 }} className="card-l card-l-hover">
                 <span className="chip-icon mb-5"><Icon className="h-6 w-6" /></span>
                 <h3 className="font-heading text-base font-bold text-navy">{card.title}</h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-slate-500">{card.description}</p>
+                <p className="mt-2.5 text-sm leading-relaxed text-slate-600">{card.description}</p>
               </motion.div>
             );
           })}

@@ -26,7 +26,7 @@ export default function SectionHead({ eyebrow, eyebrowIcon: Icon, title, subtitl
       )}
       <h2 className={dark ? "display-md mt-2 text-white" : "display-md mt-2"}>{title}</h2>
       {subtitle && (
-        <p className={`mt-5 text-lg leading-relaxed ${dark ? "text-slate-300" : "text-slate-500"}`}>
+        <p className={`mt-5 text-lg leading-relaxed ${dark ? "text-slate-300" : "text-slate-600"}`}>
           {subtitle}
         </p>
       )}

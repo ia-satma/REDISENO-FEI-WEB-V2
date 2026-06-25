@@ -20,7 +20,7 @@ export default function ComparativaLight() {
             variants={fadeUp}
             className="rounded-2xl border border-rose-200/70 bg-rose-50/40 p-8"
           >
-            <p className="font-heading text-lg font-bold text-rose-600">{c.without.label}</p>
+            <p className="font-heading text-lg font-bold text-rose-700">{c.without.label}</p>
             <ul className="mt-6 space-y-3.5">
               {c.without.items.map((it) => (
                 <li key={it} className="flex items-start gap-3 text-sm text-slate-600">

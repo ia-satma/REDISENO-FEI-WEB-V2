@@ -52,7 +52,7 @@ export default function FAQ() {
                     <AccordionTrigger className="px-6 py-5 text-left text-[15px] font-semibold text-navy hover:text-cyan-700 hover:no-underline [&[data-state=open]]:text-cyan-700">
                       {q.question}
                     </AccordionTrigger>
-                    <AccordionContent className="px-6 pb-5 text-sm leading-relaxed text-slate-500">
+                    <AccordionContent className="px-6 pb-5 text-sm leading-relaxed text-slate-600">
                       {q.answer}
                     </AccordionContent>
                   </AccordionItem>

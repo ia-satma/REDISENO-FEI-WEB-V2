@@ -28,7 +28,7 @@ export default function BlogPost() {
     return (
       <div className="site-light flex min-h-[60vh] flex-col items-center justify-center px-4 text-center">
         <h1 className="font-heading text-3xl font-bold text-navy">Artículo no encontrado</h1>
-        <p className="mt-4 text-slate-500">El artículo que buscas no existe o fue removido.</p>
+        <p className="mt-4 text-slate-600">El artículo que buscas no existe o fue removido.</p>
         <Link href="/blog"><button className="btn-ghost-l mt-6"><ArrowLeft className="h-4 w-4" />Volver al Blog</button></Link>
       </div>
     );
@@ -81,7 +81,7 @@ export default function BlogPost() {
               </div>
             </div>
             <h1 className="font-heading text-3xl font-extrabold leading-tight tracking-tight text-navy md:text-4xl lg:text-5xl">{post.title}</h1>
-            {post.excerpt && <p className="mt-5 text-lg leading-relaxed text-slate-500">{post.excerpt}</p>}
+            {post.excerpt && <p className="mt-5 text-lg leading-relaxed text-slate-600">{post.excerpt}</p>}
           </motion.div>
         </div>
       </section>

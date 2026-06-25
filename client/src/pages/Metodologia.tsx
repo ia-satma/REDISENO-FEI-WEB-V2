@@ -34,8 +34,8 @@ export default function Metodologia() {
           <motion.div {...inViewProps} variants={fadeUp} className="mx-auto max-w-2xl text-center">
             <span className="eyebrow">{impl.eyebrow}</span>
             <h2 className="display-md mt-2">{impl.title}</h2>
-            <p className="mt-5 text-lg leading-relaxed text-slate-500">{impl.subtitle}</p>
-            <p className="mx-auto mt-3 max-w-xl text-sm italic text-slate-400">{impl.note}</p>
+            <p className="mt-5 text-lg leading-relaxed text-slate-600">{impl.subtitle}</p>
+            <p className="mx-auto mt-3 max-w-xl text-sm italic text-slate-500">{impl.note}</p>
           </motion.div>
           <motion.div {...inViewProps} variants={staggerContainer(0.1)} className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {impl.timeline.map((t, i) => {
@@ -45,7 +45,7 @@ export default function Metodologia() {
                   <span className="chip-icon mb-4"><Icon className="h-5 w-5" /></span>
                   <span className="inline-flex items-center gap-1.5 rounded-full bg-cyan/10 px-3 py-1 text-xs font-semibold text-cyan-700">{t.week}</span>
                   <h3 className="mt-3 font-heading text-lg font-bold text-navy">{t.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-500">{t.description}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{t.description}</p>
                 </motion.div>
               );
             })}
